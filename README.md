@@ -1,4 +1,4 @@
-[nengo.io[(http://nengo.io)
+[nengo.io](http://nengo.io)
 =======
 
 [nengo](https://github.com/gazayas/nengo)のウェブ版
