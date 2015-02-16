@@ -1,28 +1,16 @@
-== README
+== nengo-web
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[nengo](https://github.com/gazayas/nengo)のウェブ版
 
-Things you may want to cover:
+### 何のテクノロジーでできているか
+* Rails 4.2, Ruby 2.2
+* [Bootstrap 3](http://getbootstrap.com/), [Flat UI](http://designmodo.github.io/Flat-UI/)
 
-* Ruby version
+### このウェブサイトで何ができるか
+* ~~和暦年号・西暦の変換~~
+* ~~年号・西暦生まれから人の現在年齢チェック~~
+* ~~年号・西暦の年の年齢情報チェック~~
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+### 使用しているカラー
+* [metro](http://www.colourlovers.com/palette/1/metro)（[colourloversから](http://www.colourlovers.com/))
+* #515151 (lovers gray), #FFFFFF (white), #00B4FF (metro blue), #EEEEEE (qWhite)
