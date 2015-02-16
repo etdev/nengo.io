@@ -5,7 +5,9 @@ html
     = stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
-
-  body
-    p nengoです。ようこそ。
-    = yield
+    body
+      = render "shared/navbar"
+      .center.jumbotron
+        h1 nengoへようこそ
+        = link_to "Androidアプリ", "#", :class => "btn btn-lg btn-primary"
+        = yield
