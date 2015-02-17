@@ -1,14 +1,13 @@
-nav.navbar role="navbar"
+nav.navbar.navbar-default role="navbar"
   .container
-    .navbar-header
-      button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-    .collapse.navbar-collapse#bs-example-navbar-collapse-1
-      = link_to "nengo", "#", :class => "navbar-brand"
-      ul.nav.navbar-nav
+    button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse"
+      span class="sr-only" Toggle Navigation
+      span.icon-bar
+      span.icon-bar
+      span.icon-bar
+    = link_to "nengo", "#", :class => "navbar-brand"
+    .collapse.navbar-collapse.navHeaderCollapse
+      ul.nav.navbar-nav.navbar-right
         li = link_to "年号・西暦", "#"
         li = link_to "年齢", "#"
         li = link_to "干支", "#"
