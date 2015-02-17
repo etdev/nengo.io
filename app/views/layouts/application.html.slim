@@ -1,13 +1,15 @@
 doctype html
 html
   head
-    title nengo
+    = favicon_link_tag "favicon.ico"
+    title nengo.io
     = stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
     body
       = render "shared/navbar"
-      .center
+      .text-center.jumbotron
         h1 nengoへようこそ
-        = link_to "Androidアプリ", "#", :class => "btn btn-lg btn-primary"
+        br
+        = link_to "Androidアプリ", "#", :class => "btn btn-lg btn-default text-center"
         = yield

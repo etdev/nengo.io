@@ -1,5 +1,39 @@
 $metroBlue: #00B4FF;
+$loversGray: #515151;
+$white: #FFFFFF;
+$qWhite: #EEEEEE;
 
 body {
-  background: $metroBlue !important;
+  background: $metroBlue;
 }
+
+// navbar関係
+nav {
+  background: $white !important;
+}
+
+a.brand-logo {
+  font-size: 2em;
+}
+
+.navbar a:visited {
+    color:  $loversGray;
+}
+
+.nav > li > a:visited {
+    color:  $loversGray;
+}
+
+.jumbotron {
+  background: $metroBlue;
+  color: $loversGray;
+}
+
+ul.nav a:hover {
+  background: $qWhite;
+}
+
+.btn {
+  color: $loversGray;
+}
+
