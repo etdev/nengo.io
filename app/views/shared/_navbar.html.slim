@@ -6,11 +6,11 @@ nav.navbar.navbar-default.navbar-static-top role="navbar"
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      = link_to "nengo", "#", :class => "navbar-brand brand-logo"
+      = link_to "nengo", "/", :class => "navbar-brand brand-logo"
     .collapse.navbar-collapse#navbar-main-list
       ul.nav.navbar-nav.navbar-right
-        li = link_to "年号", "#"
-        li = link_to "年齢", "/age"
-        li = link_to "干支", "/eto"
-        li = link_to "祝日", "/holidays"
-        li = link_to "アプリ", "/apps"
+        li = link_to "年号", "/"
+        li = link_to "年齢", age_path
+        li = link_to "干支", eto_path
+        li = link_to "祝日", holidays_path
+        li = link_to "アプリ", app_downloads_path

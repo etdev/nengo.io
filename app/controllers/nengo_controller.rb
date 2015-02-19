@@ -1,0 +1,2 @@
+class NengoController < ApplicationController
+end
