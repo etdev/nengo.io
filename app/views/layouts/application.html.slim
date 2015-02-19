@@ -6,10 +6,11 @@ html
     = stylesheet_link_tag "application", :media => "all", "data-turbolinks-track" => true
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
+    meta name="viewport" content="witdh=device-width, initial-scale=1.0"
     body
       = render "shared/navbar"
       .text-center.jumbotron
         h1 nengoへようこそ
         br
-        = link_to "Androidアプリ", "#", :class => "btn btn-lg btn-default text-center"
+        = link_to "Androidアプリ", "https://github.com/gazayas/nengo", :class => "btn btn-lg btn-default text-center"
         = yield
