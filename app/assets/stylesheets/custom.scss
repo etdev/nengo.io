@@ -7,25 +7,25 @@ body {
   background: $metroBlue;
 }
 
-// navbar関係
+// navbar
 nav {
-  background: $white !important;
+  background: $white;
 }
 
 a.brand-logo {
   font-size: 2em;
+  font-weight: 500;
 }
 
-.navbar a:visited {
+.navbar > a:link, a:visited {
     color:  $loversGray;
 }
 
-.nav > li > a:visited {
+.nav > li > a:visited, a:link {
     color:  $loversGray;
 }
 
-.jumbotron {
-  background: $metroBlue;
+a.navbar-brand.brand-logo {
   color: $loversGray;
 }
 
@@ -33,7 +33,8 @@ ul.nav a:hover {
   background: $qWhite;
 }
 
-.btn {
+// body
+.jumbotron {
+  background: $metroBlue;
   color: $loversGray;
 }
-

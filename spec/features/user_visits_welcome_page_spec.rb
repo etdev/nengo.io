@@ -17,3 +17,4 @@ RSpec.feature "User views navbar links" do
     expect(page).to have_content "アプリ"
   end
 end
+
