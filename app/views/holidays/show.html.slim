@@ -1,3 +1,6 @@
 h2 2015年祝日
-table.table data-role="holidays"
+table.table-bordered data-role="holidays"
   - @holidays.each do |holiday|
+    tr
+      td.name = holiday[:name]
+      td.year_seireki = "#{holiday[:year_seireki]}年#{holiday[:month]}月#{holiday[:day]}日"

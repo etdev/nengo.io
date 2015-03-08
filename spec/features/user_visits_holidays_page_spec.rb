@@ -2,7 +2,7 @@ require "rails_helper"
 RSpec.feature "User visits 祝日 page" do
   scenario "successfully" do
     visit_holidays_page
-    expect(page).to have_content "祝日ページ"
+    expect(page).to have_content "祝日"
   end
 
   scenario "and views holidays successfully" do

@@ -30,3 +30,14 @@ ul.nav a:hover {
   background: $metroBlue;
   color: $loversGray;
 }
+
+// Holidays table
+table[data-role="holidays"] {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.5em;
+  background: $metroBlue;
+  td {
+    padding: 10px;
+  }
+}
