@@ -3,7 +3,7 @@ table.table-bordered data-role="holidays" class="table-responsive table-bordered
   tr
     th.name-head 祝日名
     th.year-head 日付
-  - @holidays.each do |holiday|
+  - @holidays.first.each do |holiday|
     tr
       td.name = holiday[:name]
       td.year_seireki = "#{holiday[:year_seireki]}年#{holiday[:month]}月#{holiday[:day]}日"

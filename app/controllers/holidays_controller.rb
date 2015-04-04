@@ -2,11 +2,14 @@ require "json"
 
 class HolidaysController < ApplicationController
   def show
-    @holidays = holiday_data
+    @years = holiday_data_by_year
   end
 
-  def holiday_data
-    holidays = JSON.parse(File.read("#{Rails.root}/lib/holiday_data.json")).map! { |entry| entry.symbolize_keys! }
-    holidays
+  def holiday_data_by_year
+    symbolize_recursive(JSON.parse(File.read("#{Rails.root}/lib/holiday_data.json")))
+  end
+
+  def symbolize_recursive(outer)
+    outer.each { |element_outer| element_outer.map! { |element_inner| element_inner.symbolize_keys! } }
   end
 end

@@ -1,203 +1,201 @@
 [
-    {
-        "2015": [
-            {
-                "name": "元日",
-                "year_seireki": 2015,
-                "month": "1",
-                "day": "1"
-            },
-            {
-                "name": "成人の日",
-                "year_seireki": 2015,
-                "month": "1",
-                "day": "12"
-            },
-            {
-                "name": "建国記念の日",
-                "year_seireki": 2015,
-                "month": "2",
-                "day": "11"
-            },
-            {
-                "name": "春分の日",
-                "year_seireki": 2015,
-                "month": "3",
-                "day": "21"
-            },
-            {
-                "name": "昭和の日",
-                "year_seireki": 2015,
-                "month": "4",
-                "day": "29"
-            },
-            {
-                "name": "憲法記念日",
-                "year_seireki": 2015,
-                "month": "5",
-                "day": "3"
-            },
-            {
-                "name": "みどりの日",
-                "year_seireki": 2015,
-                "month": "5",
-                "day": "4"
-            },
-            {
-                "name": "こどもの日",
-                "year_seireki": 2015,
-                "month": "5",
-                "day": "5"
-            },
-            {
-                "name": "海の日",
-                "year_seireki": 2015,
-                "month": "7",
-                "day": "20"
-            },
-            {
-                "name": "敬老の日",
-                "year_seireki": 2015,
-                "month": "9",
-                "day": "21"
-            },
-            {
-                "name": "秋分の日",
-                "year_seireki": 2015,
-                "month": "9",
-                "day": "21"
-            },
-            {
-                "name": "体育の日",
-                "year_seireki": 2015,
-                "month": "10",
-                "day": "12"
-            },
-            {
-                "name": "文化の日",
-                "year_seireki": 2015,
-                "month": "11",
-                "day": "3"
-            },
-            {
-                "name": "勤労感謝の日",
-                "year_seireki": 2015,
-                "month": "11",
-                "day": "23"
-            },
-            {
-                "name": "天皇誕生日",
-                "year_seireki": 2015,
-                "month": "12",
-                "day": "23"
-            }
-        ],
-        "2016": [
-            {
-                "name": "元日",
-                "year_seireki": 2016,
-                "month": "1",
-                "day": "1",
-                "weekday": "金"
-            },
-            {
-                "name": "成人の日",
-                "year_seireki": 2016,
-                "month": "1",
-                "day": "11",
-                "weekday": "月"
-            },
-            {
-                "name": "建国記念の日",
-                "year_seireki": 2016,
-                "month": "2",
-                "day": "11",
-                "weekday": "木"
-            },
-            {
-                "name": "春分の日",
-                "year_seireki": 2016,
-                "month": "3",
-                "day": "20",
-                "weekday": "日"
-            },
-            {
-                "name": "昭和の日",
-                "year_seireki": 2016,
-                "month": "4",
-                "day": "29",
-                "weekday": "金"
-            },
-            {
-                "name": "憲法記念日",
-                "year_seireki": 2016,
-                "month": "5",
-                "day": "3",
-                "weekday": "火"
-            },
-            {
-                "name": "みどりの日",
-                "year_seireki": 2016,
-                "month": "5",
-                "day": "4",
-                "weekday": "水"
-            },
-            {
-                "name": "こどもの日",
-                "year_seireki": 2016,
-                "month": "5",
-                "day": "5",
-                "weekday": "木"
-            },
-            {
-                "name": "海の日",
-                "year_seireki": 2016,
-                "month": "7",
-                "day": "18",
-                "weekday": "月"
-            },
-            {
-                "name": "敬老の日",
-                "year_seireki": 2016,
-                "month": "9",
-                "day": "19",
-                "weekday": "月"
-            },
-            {
-                "name": "秋分の日",
-                "year_seireki": 2016,
-                "month": "9",
-                "day": "22",
-                "weekday": "木"
-            },
-            {
-                "name": "体育の日",
-                "year_seireki": 2016,
-                "month": "10",
-                "day": "10",
-                "weekday": "月"
-            },
-            {
-                "name": "文化の日",
-                "year_seireki": 2016,
-                "month": "11",
-                "day": "3",
-                "weekday": "木"
-            },
-            {
-                "name": "勤労感謝の日",
-                "year_seireki": 2016,
-                "month": "11",
-                "day": "23",
-                "weekday": "水"
-            },
-            {
-                "name": "天皇誕生日",
-                "year_seireki": 2016,
-                "month": "12",
-                "day": "23",
-                "weekday": "金"
-            }
-        ]
-    }
+    [
+        {
+            "name": "元日",
+            "year_seireki": 2015,
+            "month": "1",
+            "day": "1"
+        },
+        {
+            "name": "成人の日",
+            "year_seireki": 2015,
+            "month": "1",
+            "day": "12"
+        },
+        {
+            "name": "建国記念の日",
+            "year_seireki": 2015,
+            "month": "2",
+            "day": "11"
+        },
+        {
+            "name": "春分の日",
+            "year_seireki": 2015,
+            "month": "3",
+            "day": "21"
+        },
+        {
+            "name": "昭和の日",
+            "year_seireki": 2015,
+            "month": "4",
+            "day": "29"
+        },
+        {
+            "name": "憲法記念日",
+            "year_seireki": 2015,
+            "month": "5",
+            "day": "3"
+        },
+        {
+            "name": "みどりの日",
+            "year_seireki": 2015,
+            "month": "5",
+            "day": "4"
+        },
+        {
+            "name": "こどもの日",
+            "year_seireki": 2015,
+            "month": "5",
+            "day": "5"
+        },
+        {
+            "name": "海の日",
+            "year_seireki": 2015,
+            "month": "7",
+            "day": "20"
+        },
+        {
+            "name": "敬老の日",
+            "year_seireki": 2015,
+            "month": "9",
+            "day": "21"
+        },
+        {
+            "name": "秋分の日",
+            "year_seireki": 2015,
+            "month": "9",
+            "day": "21"
+        },
+        {
+            "name": "体育の日",
+            "year_seireki": 2015,
+            "month": "10",
+            "day": "12"
+        },
+        {
+            "name": "文化の日",
+            "year_seireki": 2015,
+            "month": "11",
+            "day": "3"
+        },
+        {
+            "name": "勤労感謝の日",
+            "year_seireki": 2015,
+            "month": "11",
+            "day": "23"
+        },
+        {
+            "name": "天皇誕生日",
+            "year_seireki": 2015,
+            "month": "12",
+            "day": "23"
+        }
+    ],
+    [
+        {
+            "name": "元日",
+            "year_seireki": 2016,
+            "month": "1",
+            "day": "1",
+            "weekday": "金"
+        },
+        {
+            "name": "成人の日",
+            "year_seireki": 2016,
+            "month": "1",
+            "day": "11",
+            "weekday": "月"
+        },
+        {
+            "name": "建国記念の日",
+            "year_seireki": 2016,
+            "month": "2",
+            "day": "11",
+            "weekday": "木"
+        },
+        {
+            "name": "春分の日",
+            "year_seireki": 2016,
+            "month": "3",
+            "day": "20",
+            "weekday": "日"
+        },
+        {
+            "name": "昭和の日",
+            "year_seireki": 2016,
+            "month": "4",
+            "day": "29",
+            "weekday": "金"
+        },
+        {
+            "name": "憲法記念日",
+            "year_seireki": 2016,
+            "month": "5",
+            "day": "3",
+            "weekday": "火"
+        },
+        {
+            "name": "みどりの日",
+            "year_seireki": 2016,
+            "month": "5",
+            "day": "4",
+            "weekday": "水"
+        },
+        {
+            "name": "こどもの日",
+            "year_seireki": 2016,
+            "month": "5",
+            "day": "5",
+            "weekday": "木"
+        },
+        {
+            "name": "海の日",
+            "year_seireki": 2016,
+            "month": "7",
+            "day": "18",
+            "weekday": "月"
+        },
+        {
+            "name": "敬老の日",
+            "year_seireki": 2016,
+            "month": "9",
+            "day": "19",
+            "weekday": "月"
+        },
+        {
+            "name": "秋分の日",
+            "year_seireki": 2016,
+            "month": "9",
+            "day": "22",
+            "weekday": "木"
+        },
+        {
+            "name": "体育の日",
+            "year_seireki": 2016,
+            "month": "10",
+            "day": "10",
+            "weekday": "月"
+        },
+        {
+            "name": "文化の日",
+            "year_seireki": 2016,
+            "month": "11",
+            "day": "3",
+            "weekday": "木"
+        },
+        {
+            "name": "勤労感謝の日",
+            "year_seireki": 2016,
+            "month": "11",
+            "day": "23",
+            "weekday": "水"
+        },
+        {
+            "name": "天皇誕生日",
+            "year_seireki": 2016,
+            "month": "12",
+            "day": "23",
+            "weekday": "金"
+        }
+    ]
 ]
