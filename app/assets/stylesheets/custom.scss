@@ -1,7 +1,10 @@
-$metroBlue: #00bcd4;
+//$metroBlue: #00bcd4;
+$metroBlue: #00E5FF;
 $loversGray: #515151;
+$lightGray: #DDDDDD;
 $white: #FFFFFF;
 $qWhite: #EEEEEE;
+$metroBlueLight: #84FFFF;
 
 body {
   background: $metroBlue;
@@ -33,11 +36,29 @@ ul.nav a:hover {
 
 // Holidays table
 table[data-role="holidays"] {
-  margin-top: 20px;
-  width: 100%;
-  font-size: 1.5em;
-  background: $metroBlue;
-  td {
-    padding: 10px;
+  max-width: 90%;
+  min-width: 65%;
+  margin: 25px auto 0px auto;
+  font-size: 1.0em;
+  background: $white;
+  border: solid $lightGray 3px !important;
+  th {
+    font-size: 1.4em;
+    padding: 12px;
+    text-align: center;
+    font-weight: 1000;
   }
+  td {
+    padding: 12px;
+    border: solid $lightGray 3px !important;
+  }
+}
+
+//App downloads page
+.app-dl-android {
+  margin-right: 10px;
+}
+.device-mockup {
+  max-height: 50%;
+  max-width: 100%;
 }
