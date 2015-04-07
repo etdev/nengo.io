@@ -12,9 +12,8 @@ body {
 
 .main-container {
   background: $metroBlue;
-  min-height: 600px;
+  min-height: 800px;
   width: 100%;
   color: $loversGray;
+  @include default-font-jp;
 }
-
-
