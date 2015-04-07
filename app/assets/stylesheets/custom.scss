@@ -1,5 +1,7 @@
 //$metroBlue: #00bcd4;
-$metroBlue: #00E5FF;
+//$metroBlue: #00E5FF;
+$metroBlue: #1fc2d9;
+$metroBlueDark: #00bbd3;
 $loversGray: #515151;
 $lightGray: #DDDDDD;
 $white: #FFFFFF;
@@ -18,6 +20,8 @@ nav {
 a.brand-logo {
   font-size: 2em;
   font-weight: 500;
+  float: left;
+  padding-left: 0.3em;
 }
 
 a.navbar-brand.brand-logo {
@@ -26,6 +30,35 @@ a.navbar-brand.brand-logo {
 
 ul.nav a:hover {
   background: $qWhite;
+}
+
+.app-icon {
+  float: left;
+  height: 50px;
+  position: relative;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: $loversGray;
+}
+
+.navbar-header .navbar-toggle {
+  border-color: $loversGray;
+}
+
+.collapse.navbar-collapse ul.nav.navbar-nav li a {
+  color: $loversGray;
+  &:hover {
+    color: #777;
+  }
+}
+
+.nav-divider {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 6px;
+  background-color: $metroBlueDark;
 }
 
 // body
@@ -58,7 +91,16 @@ table[data-role="holidays"] {
 .app-dl-android {
   margin-right: 10px;
 }
+
 .device-mockup {
   max-height: 50%;
   max-width: 100%;
 }
+
+@media (min-width: 768px) { 
+  .app-icon {
+    margin-right: 10px;
+  }
+}
+
+
