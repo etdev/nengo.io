@@ -1,0 +1,21 @@
+.footer {
+  height: 100px;
+  text-align: center;
+}
+
+.footer-divider {
+  @extend .nav-divider;
+}
+
+.footer-content {
+  margin-top: 1em;
+  display: block;
+}
+
+.footer-icon {
+  height: 40px;
+}
+
+.footer-text {
+  font-size: medium;
+}

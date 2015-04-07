@@ -1,7 +1,7 @@
 nav.navbar.navbar-default.navbar-static-top role="navbar"
   .container
     .navbar-header
-      = image_tag "app_icon_l.png", :class => "app-icon"
+      = link_to image_tag("app_icon_l.png", :class => "app-icon"), root_path
       button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#navbar-main-list"
         span.sr-only Toggle navigation bar
         span.icon-bar
