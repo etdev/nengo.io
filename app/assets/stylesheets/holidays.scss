@@ -1,0 +1,20 @@
+// Holidays table
+table[data-role="holidays"] {
+  max-width: 90%;
+  min-width: 65%;
+  margin: 25px auto 0px auto;
+  font-size: 1.0em;
+  background: $white;
+  border: solid $lightGray 3px !important;
+  th {
+    font-size: 1.4em;
+    padding: 12px;
+    text-align: center;
+    font-weight: 1000;
+  }
+  td {
+    padding: 12px;
+    border: solid $lightGray 3px !important;
+  }
+}
+
