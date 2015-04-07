@@ -1,20 +1,30 @@
-//$metroBlue: #00bcd4;
-//$metroBlue: #00E5FF;
 $metroBlue: #1fc2d9;
 $metroBlueDark: #00bbd3;
 $loversGray: #515151;
+$loversGrayLight: #717171;
 $lightGray: #DDDDDD;
+$reallyLightGray: #f8f8f8;
 $white: #FFFFFF;
 $qWhite: #EEEEEE;
 $metroBlueLight: #84FFFF;
 
+$navbarHeight: 56px;
+
 body {
+  background: $reallyLightGray;
+}
+
+.main-container {
   background: $metroBlue;
+  min-height: 600px;
+  width: 100%;
+  color: $loversGray;
 }
 
 // navbar
-nav {
-  background: $white;
+nav.navbar.navbar-default {
+  background: $reallyLightGray;
+  margin-bottom: 0px;
 }
 
 a.brand-logo {
@@ -26,6 +36,7 @@ a.brand-logo {
 
 a.navbar-brand.brand-logo {
   color: $loversGray;
+  margin-top: ($navbarHeight - 50)/2;
 }
 
 ul.nav a:hover {
@@ -34,8 +45,9 @@ ul.nav a:hover {
 
 .app-icon {
   float: left;
-  height: 50px;
-  position: relative;
+  padding: 5px 0 5px 0;
+  height: $navbarHeight;
+  margin-left: 16px;
 }
 
 .navbar-header .navbar-toggle .icon-bar {
@@ -43,21 +55,25 @@ ul.nav a:hover {
 }
 
 .navbar-header .navbar-toggle {
-  border-color: $loversGray;
+  border-color: $lightGray;
+  margin-top: ($navbarHeight - 50)/2 + 8;
 }
 
-.collapse.navbar-collapse ul.nav.navbar-nav li a {
+.navbar-collapse ul.nav.navbar-nav li a {
+  height: $navbarHeight;
+  font-size: 1.1em;
+  padding-top: ($navbarHeight - 50)/2 + 15;
+  text-align: center;
   color: $loversGray;
   &:hover {
     color: #777;
+    background-color: $lightGray;
   }
 }
 
 .nav-divider {
-  position: absolute;
-  top: 50px;
   width: 100%;
-  height: 6px;
+  height: 5px;
   background-color: $metroBlueDark;
 }
 
@@ -97,7 +113,7 @@ table[data-role="holidays"] {
   max-width: 100%;
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
   .app-icon {
     margin-right: 10px;
   }
