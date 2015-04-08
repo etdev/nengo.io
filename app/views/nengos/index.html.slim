@@ -1,0 +1,7 @@
+.nengo-main-container
+  br
+  h2.nengo-top-heading 年号ページ（未実装）
+  - form_for @nengo do |form|
+    = form.label :year_seireki, "西暦の年"
+    = form.text_field :year_seireki
+    = form.submit "変換する"

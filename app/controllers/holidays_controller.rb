@@ -1,7 +1,7 @@
 require "json"
 
 class HolidaysController < ApplicationController
-  def show
+  def index
     @years = holiday_data_by_year
   end
 
