@@ -1,7 +1,11 @@
 .nengo-main-container
   br
-  h2.nengo-top-heading 年号ページ（未実装）
-  - form_for @nengo do |form|
-    = form.label :year_seireki, "西暦の年"
-    = form.text_field :year_seireki
-    = form.submit "変換する"
+  /h2.nengo-top-heading 年号ページ（未実装）
+  - flash.each do |name, msg|
+    = content_tag :div, msg, class: name
+  form
+    .form-group
+      label.nengo-seireki-label for="nengos" method="post" action="index_with_flash" 西暦の年:
+      input.form-control.nengo-seireki  type="text-field" name="西暦の年"
+      input.btn.btn-default.nengo-seireki-submit type="submit" value="変換する"
+

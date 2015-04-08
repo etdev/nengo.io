@@ -5,3 +5,21 @@
 .nengo-top-heading {
   color: $loversGray;
 }
+
+.nengo-seireki {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.nengo-seireki-label {
+  text-align: left !important;
+  float: left;
+  font-weight: 700;
+  margin-left: 10%;
+  font-size: 1.5em;
+}
+
+.nengo-seireki-submit {
+  margin-top: 0.6em;
+}

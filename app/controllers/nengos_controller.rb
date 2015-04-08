@@ -1,9 +1,10 @@
 class NengosController < ApplicationController
   def index
-    @nengo = Nengo.new
+    flash[:success] = "平成27ですよ！ありがとう！"
   end
 
-  def show
-
+  def index_with_flash
+    flash[:success] = "平成27ですよ！ありがとう！"
+    render :index
   end
 end
