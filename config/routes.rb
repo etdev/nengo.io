@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  resources :nengos, only: [:show, :index]
-  resources :ages, only: [:show, :index]
-  resources :etos, only: [:show, :index]
-  resources :holidays, only: [:show, :index]
-  resources :app_downloads, only: [:show, :index]
+  resource :nengo, only: [:index]
+  resource :age, only: [:show]
+  resource :eto, only: [:show]
+  resources :holidays, only: [:index]
+  resource :app_download, only: [:show]
   root to: "nengos#index"
 end
