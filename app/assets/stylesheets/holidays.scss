@@ -5,20 +5,22 @@
 
 table[data-role="holidays"] {
   width: 100%;
-  margin: 25px auto 0px auto;
+  margin: 20px auto 0px auto;
   font-size: 1.0em;
   background: $white;
-  border: solid $lightGray 3px !important;
+  border: solid $lightGray 1px !important;
   th {
     font-size: 1.4em;
-    padding: 12px;
+    color: $gray700;
+    padding: 10px 1% 10px 1%;
     text-align: center;
     font-weight: 1000;
-    border-bottom: solid $lightGray 5px !important;
+    border-bottom: solid $lightGray 2px !important;
   }
   td {
     padding: 12px;
-    border: solid $lightGray 3px !important;
+    border: solid $lightGray 1px !important;
+    color: $gray700;
   }
 }
 

@@ -1,6 +1,6 @@
 // body
 body {
-  background: $qWhite;
+  background: $metroBlue;
 }
 
 .jumbotron {
@@ -14,4 +14,19 @@ body {
   width: 100%;
   color: $white;
   @include default-font-jp;
+}
+
+.panel {
+  border-color: $metroBlue;
+}
+
+.panel-heading {
+  background: $blue200 !important;
+  border-color: $blue200 !important;
+  color: $white !important;
+}
+
+.panel-body {
+  background: $blue200;
+  border-color: $blue200;
 }
