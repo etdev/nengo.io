@@ -1,19 +1,17 @@
-$navbarHeight: 56px;
-
 // body
 body {
-  background: $reallyLightGray;
+  background: $qWhite;
 }
 
 .jumbotron {
   background: $metroBlue;
-  color: $loversGray;
+  color: $white;
 }
 
 .main-container {
   background: $metroBlue;
   min-height: 920px;
   width: 100%;
-  color: $loversGray;
+  color: $white;
   @include default-font-jp;
 }

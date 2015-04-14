@@ -1,7 +1,10 @@
 // navbar
+$navbarHeight: 56px;
+
 nav.navbar.navbar-default {
-  background: $reallyLightGray;
+  background: $metroBlue;
   margin-bottom: 0px;
+  border-color: $metroBlue;
 }
 
 a.brand-logo {
@@ -9,15 +12,17 @@ a.brand-logo {
   font-weight: 500;
   float: left;
   padding-left: 0.3em;
+  &:hover {
+    color: $metroBlue50 !important;
+  }
 }
 
 a.navbar-brand.brand-logo {
-  color: $loversGray;
+  color: $white;
   margin-top: ($navbarHeight - 50)/2;
 }
 
 ul.nav a:hover {
-  background: $qWhite;
 }
 
 .app-icon {
@@ -28,23 +33,29 @@ ul.nav a:hover {
 }
 
 .navbar-header .navbar-toggle .icon-bar {
-  background-color: $loversGray;
+  background-color: $white;
 }
 
 .navbar-header .navbar-toggle {
-  border-color: $lightGray;
+  border-color: $metroBlue;
   margin-top: ($navbarHeight - 50)/2 + 8;
+  &:hover {
+    background: $metroBlueDark;
+  }
 }
 
+.navbar-collapse {
+  border: none;
+}
 .navbar-collapse ul.nav.navbar-nav li a {
   height: $navbarHeight;
   font-size: 1.1em;
   padding-top: ($navbarHeight - 50)/2 + 15;
   text-align: center;
-  color: $loversGray;
+  color: $white;
+  border-color: $metroBlue;
   &:hover {
-    color: #777;
-    background-color: #eee;
+    background: $metroBlueDark;
   }
 }
 
