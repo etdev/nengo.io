@@ -4,7 +4,23 @@
     = content_tag :div, msg, class: name
   form
     .form-group
-      label.nengo-seireki-label for="nengos" method="post" action="index_with_flash" 西暦
-      input.form-control.nengo-seireki  type="text-field" name="西暦の年"
-      input.btn.btn-default.nengo-seireki-submit type="submit" value="変換する"
+      .row
+        .nengo-seireki-container
+          .col-md-2
+            label.nengo-seireki-label for="nengos" method="post" action="index_with_flash" 西暦
+          .col-md-10
+            input.form-control.nengo-seireki  type="text-field" name="西暦の年"
+      .row
+        .nengo-jidai-container
+          .col-md-1
+            label.nengo-jidai-label for="nengos" method="post" action="index_with_flag" 年号
+          .col-md-5
+            input.form-control.nengo-jidai  type="text-field" name="年号の年"
+          .col-md-1
+            label.nengo-jidai-label for="nengos" method="post" action="index_with_flag" 時代
+          .col-md-5
+            input.form-control.nengo-jidai-type type="select" name="年号の時代"
+      .row
+        input.btn.btn-default.nengo-submit type="submit" value="変換する"
+      
 

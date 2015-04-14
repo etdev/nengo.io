@@ -6,17 +6,24 @@
   color: $white;
 }
 
-.nengo-seireki {
+.nengo-seireki, .nengo-jidai, .nengo-jidai-type {
   width: 80%;
   margin: auto;
   text-align: center;
+  margin-bottom: 12px;
 }
 
-.nengo-seireki-label {
+.nengo-jidai-container, .nengo-seireki-container {
+  background: $blue700;
+  padding: 10px 2%;
+  margin: 15px 0;
+  border-radius: 4px;
+}
+.nengo-seireki-label, .nengo-jidai-label {
   text-align: left !important;
   float: left;
   font-weight: 500;
-  margin-left: 10%;
+  margin-bottom: 12px;
   font-size: 1.5em;
 }
 
