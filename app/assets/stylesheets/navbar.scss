@@ -1,10 +1,11 @@
 // navbar
-$navbarHeight: 56px;
+$navbarHeight: 50px;
 
 nav.navbar.navbar-default {
-  background: $metroBlue;
+  background: $myHair;
   margin-bottom: 0px;
-  border-color: $metroBlue;
+  border: none !important;
+  border-radius: 0px !important;
 }
 
 a.brand-logo {
@@ -13,16 +14,13 @@ a.brand-logo {
   float: left;
   padding-left: 0.3em;
   &:hover {
-    color: $metroBlue50 !important;
+    color: $pewter !important;
   }
 }
 
 a.navbar-brand.brand-logo {
-  color: $white;
+  color: $lagoon;
   margin-top: ($navbarHeight - 50)/2;
-}
-
-ul.nav a:hover {
 }
 
 .app-icon {
@@ -37,15 +35,15 @@ ul.nav a:hover {
 }
 
 .navbar-header .navbar-toggle {
-  border-color: $metroBlue;
+  border: none !important;
   margin-top: ($navbarHeight - 50)/2 + 8;
   &:hover {
-    background: $metroBlueDark;
+    background: $darkSteel !important;
   }
 }
 
 .navbar-collapse {
-  border: none;
+  border: none !important;
 }
 
 .navbar-collapse ul.nav.navbar-nav li a {
@@ -55,9 +53,10 @@ ul.nav a:hover {
   padding: (($navbarHeight - 50)/2 + 25) 30% auto 30%;
   text-align: center;
   color: $white;
-  border-color: $metroBlue;
+  border: none !important;
   &:hover {
-    background: $metroBlueDark;
+    //background: $darkSteel;
+    color: $pewter !important;
   }
 }
 
@@ -70,5 +69,6 @@ ul.nav a:hover {
 @media (min-width: 768px) {
   .app-icon {
     margin-right: 10px;
+    border: none !important;
   }
 }

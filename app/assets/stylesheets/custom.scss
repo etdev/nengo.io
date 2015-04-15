@@ -1,31 +1,17 @@
 // body
 body {
-  background: $metroBlue;
+  background: $myHair;
 }
 
 .jumbotron {
-  background: $metroBlue;
+  background: $myHair;
   color: $white;
 }
 
 .main-container {
-  background: $metroBlue;
+  background: $myHair;
   min-height: 920px;
   color: $white;
   @include default-font-jp;
 }
 
-.panel {
-  border-color: $metroBlue;
-}
-
-.panel-heading {
-  background: $blue200 !important;
-  border-color: $blue200 !important;
-  color: $white !important;
-}
-
-.panel-body {
-  background: $blue200;
-  border-color: $blue200;
-}
