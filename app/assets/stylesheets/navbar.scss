@@ -47,10 +47,12 @@ ul.nav a:hover {
 .navbar-collapse {
   border: none;
 }
+
 .navbar-collapse ul.nav.navbar-nav li a {
   height: $navbarHeight;
-  font-size: 1.25em;
-  padding-top: ($navbarHeight - 50)/2 + 15;
+  font-size: 1.1em;
+  font-weight: 700;
+  padding: (($navbarHeight - 50)/2 + 25) 30% auto 30%;
   text-align: center;
   color: $white;
   border-color: $metroBlue;
