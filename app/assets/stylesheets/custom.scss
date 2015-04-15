@@ -1,6 +1,6 @@
 // body
 body {
-  background: $myHair;
+  background: $lightGrayNew;
 }
 
 .jumbotron {
@@ -9,7 +9,6 @@ body {
 }
 
 .main-container {
-  background: $myHair;
   min-height: 920px;
   color: $white;
   @include default-font-jp;

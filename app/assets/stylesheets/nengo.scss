@@ -1,6 +1,6 @@
 .nengo-main-container {
   text-align: center;
-  color: $white;
+  color: $midGray;
 }
 
 .nengo-seireki, .nengo-jidai, .nengo-jidai-type {
@@ -11,10 +11,11 @@
 }
 
 .nengo-jidai-container, .nengo-seireki-container {
-  background: $darkSteel;
-  padding: 5%;
-  margin: 15px 0;
+  border: 1px dashed $darkSteel;
+  padding: 3%;
+  margin: 15px auto;
   border-radius: 4px;
+  max-width: 85%;
 }
 .nengo-seireki-label, .nengo-jidai-label {
   text-align: left !important;

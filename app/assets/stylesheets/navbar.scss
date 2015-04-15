@@ -9,7 +9,7 @@ nav.navbar.navbar-default {
 }
 
 a.brand-logo {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 500;
   float: left;
   padding-left: 0.3em;
@@ -19,7 +19,7 @@ a.brand-logo {
 }
 
 a.navbar-brand.brand-logo {
-  color: $lagoon;
+  color: $white;
   margin-top: ($navbarHeight - 50)/2;
 }
 
@@ -49,7 +49,7 @@ a.navbar-brand.brand-logo {
 .navbar-collapse ul.nav.navbar-nav li a {
   height: $navbarHeight;
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 600;
   padding: (($navbarHeight - 50)/2 + 25) 30% auto 30%;
   text-align: center;
   color: $white;
