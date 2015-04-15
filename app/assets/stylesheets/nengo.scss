@@ -4,7 +4,7 @@
 }
 
 .nengo-seireki, .nengo-jidai, .nengo-jidai-type {
-  width: 80%;
+  width: 85%;
   margin: auto;
   text-align: center;
   margin-bottom: 12px;
@@ -12,10 +12,12 @@
 
 .nengo-jidai-container, .nengo-seireki-container {
   border: 1px dashed $darkSteel;
+  background: $white;
   padding: 3%;
+  padding-bottom: 6%;
   margin: 15px auto;
-  border-radius: 4px;
-  max-width: 85%;
+  border-radius: 2px;
+  max-width: 86%;
 }
 .nengo-seireki-label, .nengo-jidai-label {
   text-align: left !important;
@@ -23,8 +25,15 @@
   font-weight: 500;
   margin-bottom: 12px;
   font-size: 1.5em;
+  padding: 3%;
 }
 
 .nengo-seireki-submit {
   margin-top: 0.6em;
+}
+
+p.huge-heading {
+  font-size: 4em;
+  color: $firstBlood;
+  font-weight: 700;
 }
