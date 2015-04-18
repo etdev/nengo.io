@@ -52,7 +52,7 @@ a.navbar-brand.brand-logo {
   font-weight: 600;
   text-align: center;
   color: $white;
-  padding: 0 15% !important;
+  padding: 0 15px;
 
   &:hover {
     background: $darkSteel;
@@ -60,7 +60,7 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-collapse.collapse.in ul.nav li a {
-  
+
 }
 
 .nav-divider {

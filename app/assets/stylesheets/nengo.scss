@@ -1,50 +1,35 @@
-.nengo-main-container {
+$block-height: 136px;
+$block-height-main: 3*$block-height/4;
+$block-height-hl: $block-height/4;
+
+.nengo-top-container {
   text-align: center;
+  font-weight: 700;
+  margin-top: 10px;
+  font-size: 2em;
   color: $midGray;
-}
-
-.nengo-seireki, .nengo-jidai, .nengo-jidai-type {
-  width: 85%;
-  margin: auto;
-  text-align: center;
-  margin-bottom: 12px;
-}
-
-.nengo-jidai-container, .nengo-seireki-container {
-  border: 1px dashed $darkSteel;
-  background: $white;
-  padding: 3%;
-  padding-bottom: 6%;
-  margin: 15px auto;
-  border-radius: 2px;
-  max-width: 86%;
-}
-.nengo-seireki-label, .nengo-jidai-label {
-  text-align: left !important;
-  float: left;
-  font-weight: 500;
-  margin-bottom: 12px;
-  font-size: 1.5em;
-  padding: 3%;
-}
-
-.nengo-seireki-submit {
-  margin-top: 0.6em;
 }
 
 .block-container {
   background-color: $white;
   color: $myHair;
-  height: 128px;
+  height: $block-height;
   margin: 15px 0;
 
   .block-main {
-    height: 96px;
+    height: $block-height-main;
     background-color: $white;
+    .block-main-left {
+      background-color: $pewter;
+    }
+    .block-main-right {
+      background-color: $white;
+    }
   }
 
   .block-hl {
-    height: 32px;
+    height: $block-height-hl;
+    background-color: $myHair;
     text-align: center;
     overflow: hidden;
   }
@@ -58,46 +43,122 @@
 .seireki-block-main, .nengo-block-main, .nenrei-block-main, .eto-block-main {
   @extend .block-main;
   h1 {
-    line-height: 96px;
-    color: $lessDarkSteel;;
-    text-align: right;
+    color: $lessDarkSteel;
+    text-align: left;
     padding: 0 2%;
-    font-weight: 900;
+    font-weight: 700;
     font-size: 2.5em;
+    float: left;
+    width: 100%;
+    line-height: $block-height-main;
+    margin: auto;
   }
 }
 
-.seireki-block-hl {
-  @extend .block-hl;
-  background-color: $greenHL;
-  //background-color: $purpleHL;
+.seireki-block-main-left {
+  @extend .seireki-block-main;
+  width: 40%;
+  float: left;
+  background-color: $gunpowder !important;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
 }
 
-.nengo-block-hl {
-  @extend .block-hl;
-  background-color: $blueHL;
-  //background-color: $purpleHL;
+.seireki-block-main-center {
+  @extend .seireki-block-main;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: $cutlass !important;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
 }
 
-.nenrei-block-hl {
-  @extend .block-hl;
-  background-color: $greenHL;
-  //background-color: $purpleHL;
+.seireki-block-main-right {
+  @extend .seireki-block-main;
+  width: 30%;
+  float: left;
+  text-align: center;
+  background-color: $gunpowder !important;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
 }
 
-.eto-block-hl {
+.nengo-block-main-left {
+  @extend .nengo-block-main;
+  width: 50%;
+  float: left;
+  text-align: center;
+  background-color: $gunpowder !important;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
+}
+
+.nengo-block-main-right {
+  @extend .nengo-block-main-left;
+  background-color: $cutlass !important;
+}
+
+.nenrei-block-main-left {
+  @extend .nenrei-block-main;
+  width: 50%;
+  float: left;
+  text-align: center;
+  background-color: $gunpowder !important;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
+}
+
+.nenrei-block-main-right {
+  @extend .nenrei-block-main-left;
+  background-color: $cutlass !important;
+}
+
+.eto-block-main-left {
+  @extend .eto-block-main;
+  width: 50%;
+  float: left;
+  text-align: center;
+  background-color: $gunpowder !important;
+  h1 {
+    color: $white;
+    text-align: center;
+  }
+}
+
+.eto-block-main-right {
+  @extend .eto-block-main-left;
+  background-color: $cutlass !important;
+}
+
+.seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl {
   @extend .block-hl;
-  background-color: $blueHL;
-  //background-color: $purpleHL;
 }
 
 .block-hl  {
+  border-top: 4px solid $iconBlue;
   p {
     font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     padding-left: 1%;
+    line-height: $block-height-hl;
     color: $white;
     text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-container {
   }
 }
