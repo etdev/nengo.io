@@ -12,7 +12,7 @@ a.brand-logo {
   font-size: 1.8em;
   font-weight: 500;
   float: left;
-  padding-left: 0.3em;
+  padding-left: 0.5em;
   &:hover {
     color: $pewter !important;
   }
@@ -50,14 +50,19 @@ a.navbar-brand.brand-logo {
   height: $navbarHeight;
   font-size: 1.1em;
   font-weight: 600;
-  padding: (($navbarHeight - 50)/2 + 25) 30% auto 30%;
   text-align: center;
   color: $white;
   border: none !important;
+  padding: 0;
+
   &:hover {
-    //background: $darkSteel;
-    color: $pewter !important;
+    background: $darkSteel;
+    //color: $pewter !important;
   }
+}
+
+.navbar-collapse.collapse.in ul.nav li a {
+  
 }
 
 .nav-divider {
