@@ -1,7 +1,6 @@
 .nengo-main-container
   - flash.each do |name, msg|
     = content_tag :div, msg, class: name
-  p.huge-heading 変換
   form
     .form-group
       .row
@@ -22,5 +21,5 @@
             input.form-control.nengo-jidai-type type="select" name="年号の時代"
       .row
         input.btn.btn-primary.nengo-submit type="submit" value="変換する"
-      
+  - render "block_seireki"
 
