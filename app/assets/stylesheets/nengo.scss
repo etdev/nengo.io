@@ -32,14 +32,72 @@
   margin-top: 0.6em;
 }
 
-p.huge-heading {
-  font-size: 4em;
-  color: $firstBlood;
-  font-weight: 700;
+.block-container {
+  background-color: $white;
+  color: $myHair;
+  height: 128px;
+  margin: 15px 0;
+
+  .block-main {
+    height: 96px;
+    background-color: $white;
+  }
+
+  .block-hl {
+    height: 32px;
+    text-align: center;
+    overflow: hidden;
+  }
+
 }
 
-p.seireki-block {
-  background-color: #222;
-  color: $white;
-  min-height: 500px;
+.seireki-block-container, .nengo-block-container, .nenrei-block-container, .eto-block-container {
+  @extend .block-container;
+}
+
+.seireki-block-main, .nengo-block-main, .nenrei-block-main, .eto-block-main {
+  @extend .block-main;
+  h1 {
+    line-height: 96px;
+    color: $lessDarkSteel;;
+    text-align: right;
+    padding: 0 2%;
+    font-weight: 900;
+    font-size: 2.5em;
+  }
+}
+
+.seireki-block-hl {
+  @extend .block-hl;
+  background-color: $greenHL;
+  //background-color: $purpleHL;
+}
+
+.nengo-block-hl {
+  @extend .block-hl;
+  background-color: $blueHL;
+  //background-color: $purpleHL;
+}
+
+.nenrei-block-hl {
+  @extend .block-hl;
+  background-color: $greenHL;
+  //background-color: $purpleHL;
+}
+
+.eto-block-hl {
+  @extend .block-hl;
+  background-color: $blueHL;
+  //background-color: $purpleHL;
+}
+
+.block-hl  {
+  p {
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-left: 1%;
+    color: $white;
+    text-align: left;
+  }
 }

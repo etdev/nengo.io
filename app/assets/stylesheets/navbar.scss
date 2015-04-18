@@ -4,15 +4,15 @@ $navbarHeight: 50px;
 nav.navbar.navbar-default {
   background: $myHair;
   margin-bottom: 0px;
-  border: none !important;
-  border-radius: 0px !important;
+  border-bottom: 3px solid $pewter;
 }
 
 a.brand-logo {
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 500;
   float: left;
   padding-left: 0.5em;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   &:hover {
     color: $pewter !important;
   }
@@ -47,17 +47,15 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-collapse ul.nav.navbar-nav li a {
-  height: $navbarHeight;
   font-size: 1.1em;
+  line-height: $navbarHeight;
   font-weight: 600;
   text-align: center;
   color: $white;
-  border: none !important;
-  padding: 0;
+  padding: 0 15% !important;
 
   &:hover {
     background: $darkSteel;
-    //color: $pewter !important;
   }
 }
 

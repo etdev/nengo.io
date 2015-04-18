@@ -1,25 +1,5 @@
 .nengo-main-container
   - flash.each do |name, msg|
     = content_tag :div, msg, class: name
-  form
-    .form-group
-      .row
-        .nengo-seireki-container
-          .col-md-2
-            label.nengo-seireki-label for="nengos" method="post" action="index_with_flash" 西暦
-          .col-md-10
-            input.form-control.nengo-seireki  type="text-field" name="西暦の年"
-      .row
-        .nengo-jidai-container
-          .col-md-1
-            label.nengo-jidai-label for="nengos" method="post" action="index_with_flag" 年号
-          .col-md-5
-            input.form-control.nengo-jidai  type="text-field" name="年号の年"
-          .col-md-1
-            label.nengo-jidai-label for="nengos" method="post" action="index_with_flag" 時代
-          .col-md-5
-            input.form-control.nengo-jidai-type type="select" name="年号の時代"
-      .row
-        input.btn.btn-primary.nengo-submit type="submit" value="変換する"
-  - render "block_seireki"
+  = render "block_seireki"
 
