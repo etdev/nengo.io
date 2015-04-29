@@ -16,7 +16,8 @@ module NengoWeb
       g.test_framework false
       g.factory_girl false
     end
+
+    config.time_zone = "Tokyo"
   end
 
-  config.time_zone = "Tokyo"
 end

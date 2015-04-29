@@ -10,6 +10,7 @@ class Year
   attr_reader :jidai_data
 
   JIDAI_DATA_PATH = "#{Rails.root.join('lib', 'jidai_data.json')}"
+  ANIMAL_LIST_ETO_PATH = "#{Rails.root.join('lib', 'animal_list_eto.json')}"
 
   def initialize
     @jidai_data = load_jidai_data(JIDAI_DATA_FILE)
@@ -30,15 +31,41 @@ class Year
 
   def set_by_nengo(nengo_data)
     @year_seireki = nengo_to_seireki(nengo_data)
+    set_by_seireki(@year_seireki)
   end
 
   def set_by_nenrei(nenrei)
+    @year_seireki = current_year_seireki - nenrei
+    set_by_seireki(@year_seireki)
   end
 
   def set_by_koki(koki)
+    @year_seireki = current_year_seireki + 660
+    set_by_seireki(@year_seireki)
   end
 
-  def get_data_nengo(year_seireki)
+  def get_data_eto(year_seireki)
+    data_eto = {}
+    year_rel = get_year_eto(year_seireki)
+    data_eto[:year_rel] = year_rel
+    data_eto[:animal] = get_animal_eto(year_rel)
+    data_eto[:element] = get_element_eto(year_rel)
+  end
+
+  def get_year_eto(year_seireki)
+    if year_seireki >= 4
+      (year_seireki - 3) % 60
+    elsif year_seireki < 0
+      60 - ((year_seireki + 2) % 60)
+    else
+      eto_first_three(year_seireki)
+    end
+  end
+
+  def get_animal_eto(year_rel)
+    year_animal = year_rel == 10 ? year_rel : year_rel % 10
+    animal_list_eto = JSON.parse(ANIMAL_LIST_ETO_PATH)
+    animal_list_eto.select { |hash| hash["id"] == year_animal }
   end
 
   def get_nenrei(year_seireki)
@@ -50,9 +77,24 @@ class Year
   def get_koki(year_seireki)
   end
 
-  def nengo_to_seireki(year_nengo:, jidai:)
-
+  def nengo_to_seireki(year_rel:, jidai:)
+    current_jidai = @jidai_data.select { |jidai_hash| jidai_hash["name"] == jidai }
+    current_jidai["begin_yr"].to_i + year_rel
   end
+
+  def eto_first_three(year_seireki)
+    case year_seireki
+    when 1
+      58
+    when 2
+      59
+    when 3
+      60
+    else
+      raise "入力された年が無効です"
+    end
+  end
+
 
   private
     def set_for_seireki(year_seireki)
