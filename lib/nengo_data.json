@@ -1,0 +1,442 @@
+[
+  {
+    index: 0,
+    name: "応仁",
+    reading: "おうにん",
+    begin_yr: 1467,
+    end_yr: 1468,
+    eto: null
+  },
+  {
+    index: 1,
+    name: "文明",
+    reading: "ぶんめい",
+    begin_yr: 1469,
+    end_yr: 1486,
+    eto: null
+  },
+  {
+    index: 2,
+    name: "長享",
+    reading: "ちょうきょう",
+    begin_yr: 1487,
+    end_yr: 1488,
+    eto: null
+  },
+  {
+    index: 3,
+    name: "延徳",
+    reading: "えんとく",
+    begin_yr: 1489,
+    end_yr: 1491,
+    eto: null
+  },
+  {
+    index: 4,
+    name: "明応",
+    reading: "めいおう",
+    begin_yr: 1492,
+    end_yr: 1500,
+    eto: null
+  },
+  {
+    index: 5,
+    name: "文亀",
+    reading: "ぶんき",
+    begin_yr: 1501,
+    end_yr: 1503,
+    eto: null
+  },
+  {
+    index: 6,
+    name: "永正",
+    reading: "えいしょう",
+    begin_yr: 1504,
+    end_yr: 1520,
+    eto: null
+  },
+  {
+    index: 7,
+    name: "大永",
+    reading: "だいえい",
+    begin_yr: 1521,
+    end_yr: 1527,
+    eto: null
+  },
+  {
+    index: 8,
+    name: "享禄",
+    reading: "きょうろく",
+    begin_yr: 1528,
+    end_yr: 1531,
+    eto: null
+  },
+  {
+    index: 9,
+    name: "天文",
+    reading: "てんぶん",
+    begin_yr: 1532,
+    end_yr: 1554,
+    eto: null
+  },
+  {
+    index: 10,
+    name: "弘治",
+    reading: "こうじ",
+    begin_yr: 1555,
+    end_yr: 1557,
+    eto: null
+  },
+  {
+    index: 11,
+    name: "永禄",
+    reading: "えいろく",
+    begin_yr: 1558,
+    end_yr: 1569,
+    eto: null
+  },
+  {
+    index: 12,
+    name: "元亀",
+    reading: "げんき",
+    begin_yr: 1570,
+    end_yr: 1572,
+    eto: null
+  },
+  {
+    index: 13,
+    name: "天正",
+    reading: "てんしょう",
+    begin_yr: 1573,
+    end_yr: 1591,
+    eto: null
+  },
+  {
+    index: 14,
+    name: "文禄",
+    reading: "ぶんろく",
+    begin_yr: 1592,
+    end_yr: 1595,
+    eto: null
+  },
+  {
+    index: 15,
+    name: "慶長",
+    reading: "けいちょう",
+    begin_yr: 1596,
+    end_yr: 1614,
+    eto: null
+  },
+  {
+    index: 16,
+    name: "元和",
+    reading: "げんな",
+    begin_yr: 1615,
+    end_yr: 1623,
+    eto: null
+  },
+  {
+    index: 17,
+    name: "寛永",
+    reading: "かんえい",
+    begin_yr: 1624,
+    end_yr: 1643,
+    eto: null
+  },
+  {
+    index: 18,
+    name: "正保",
+    reading: "しょうほう",
+    begin_yr: 1644,
+    end_yr: 1647,
+    eto: null
+  },
+  {
+    index: 19,
+    name: "慶安",
+    reading: "けいあん",
+    begin_yr: 1648,
+    end_yr: 1651,
+    eto: null
+  },
+  {
+    index: 20,
+    name: "承応",
+    reading: "じょうおう",
+    begin_yr: 1652,
+    end_yr: 1654,
+    eto: null
+  },
+  {
+    index: 21,
+    name: "明暦",
+    reading: "めいれき",
+    begin_yr: 1655,
+    end_yr: 1657,
+    eto: null
+  },
+  {
+    index: 22,
+    name: "万治",
+    reading: "まんじ",
+    begin_yr: 1658,
+    end_yr: 1660,
+    eto: null
+  },
+  {
+    index: 23,
+    name: "寛文",
+    reading: "かんぶん",
+    begin_yr: 1661,
+    end_yr: 1672,
+    eto: null
+  },
+  {
+    index: 24,
+    name: "延宝",
+    reading: "えんぽう",
+    begin_yr: 1673,
+    end_yr: 1680,
+    eto: null
+  },
+  {
+    index: 25,
+    name: "天和",
+    reading: "てんな",
+    begin_yr: 1681,
+    end_yr: 1683,
+    eto: null
+  },
+  {
+    index: 26,
+    name: "貞享",
+    reading: "じょうきょう",
+    begin_yr: 1684,
+    end_yr: 1687,
+    eto: null
+  },
+  {
+    index: 27,
+    name: "元禄",
+    reading: "げんろく",
+    begin_yr: 1688,
+    end_yr: 1703,
+    eto: null
+  },
+  {
+    index: 28,
+    name: "宝永",
+    reading: "ほうえい",
+    begin_yr: 1704,
+    end_yr: 1710,
+    eto: null
+  },
+  {
+    index: 29,
+    name: "正徳",
+    reading: "しょうとく",
+    begin_yr: 1711,
+    end_yr: 1715,
+    eto: null
+  },
+  {
+    index: 30,
+    name: "享保",
+    reading: "きょうほ",
+    begin_yr: 1716,
+    end_yr: 1735,
+    eto: null
+  },
+  {
+    index: 31,
+    name: "元文",
+    reading: "げんぶん",
+    begin_yr: 1736,
+    end_yr: 1740,
+    eto: null
+  },
+  {
+    index: 32,
+    name: "寛保",
+    reading: "かんぽ",
+    begin_yr: 1741,
+    end_yr: 1743,
+    eto: null
+  },
+  {
+    index: 33,
+    name: "延享",
+    reading: "えんきょう",
+    begin_yr: 1744,
+    end_yr: 1747,
+    eto: null
+  },
+  {
+    index: 34,
+    name: "寛延",
+    reading: "かんえん",
+    begin_yr: 1748,
+    end_yr: 1750,
+    eto: null
+  },
+  {
+    index: 35,
+    name: "宝暦",
+    reading: "ほうれき",
+    begin_yr: 1751,
+    end_yr: 1763,
+    eto: null
+  },
+  {
+    index: 36,
+    name: "明和",
+    reading: "めいわ",
+    begin_yr: 1764,
+    end_yr: 1771,
+    eto: null
+  },
+  {
+    index: 37,
+    name: "安永",
+    reading: "あんえい",
+    begin_yr: 1772,
+    end_yr: 1780,
+    eto: null
+  },
+  {
+    index: 38,
+    name: "天明",
+    reading: "てんめい",
+    begin_yr: 1781,
+    end_yr: 1788,
+    eto: null
+  },
+  {
+    index: 39,
+    name: "寛政",
+    reading: "かんせい",
+    begin_yr: 1789,
+    end_yr: 1800,
+    eto: null
+  },
+  {
+    index: 40,
+    name: "享和",
+    reading: "きょうわ",
+    begin_yr: 1801,
+    end_yr: 1803,
+    eto: null
+  },
+  {
+    index: 41,
+    name: "文化",
+    reading: "ぶんか",
+    begin_yr: 1804,
+    end_yr: 1817,
+    eto: null
+  },
+  {
+    index: 42,
+    name: "文政",
+    reading: "ぶんせい",
+    begin_yr: 1818,
+    end_yr: 1829,
+    eto: null
+  },
+  {
+    index: 43,
+    name: "天保",
+    reading: "てんぽう",
+    begin_yr: 1830,
+    end_yr: 1843,
+    eto: null
+  },
+  {
+    index: 44,
+    name: "弘化",
+    reading: "こうか",
+    begin_yr: 1844,
+    end_yr: 1847,
+    eto: null
+  },
+  {
+    index: 45,
+    name: "嘉永",
+    reading: "かえい",
+    begin_yr: 1848,
+    end_yr: 1853,
+    eto: null
+  },
+  {
+    index: 46,
+    name: "安政",
+    reading: "あんせい",
+    begin_yr: 1854,
+    end_yr: 1859,
+    eto: null
+  },
+  {
+    index: 47,
+    name: "万延",
+    reading: "まんえん",
+    begin_yr: 1860,
+    end_yr: 1860,
+    eto: null
+  },
+  {
+    index: 48,
+    name: "文久",
+    reading: "ぶんきゅう",
+    begin_yr: 1861,
+    end_yr: 1863,
+    eto: null
+  },
+  {
+    index: 49,
+    name: "元治",
+    reading: "げんじ",
+    begin_yr: 1864,
+    end_yr: 1864,
+    eto: null
+  },
+  {
+    index: 50,
+    name: "慶応",
+    reading: "けいおう",
+    begin_yr: 1865,
+    end_yr: 1867,
+    eto: null
+  },
+  {
+    index: 51,
+    name: "明治",
+    reading: "めいじ",
+    begin_yr: 1868,
+    end_yr: 1912,
+    eto: null
+  },
+  {
+    index: 52,
+    name: "大正",
+    reading: "たいしょう",
+    begin_yr: 1912,
+    end_yr: 1926,
+    eto: null
+  },
+  {
+    index: 53,
+    name: "昭和",
+    reading: "しょうわ",
+    begin_yr: 1926,
+    end_yr: 1989,
+    eto: null
+  },
+  {
+    index: 54,
+    name: "平成",
+    reading: "へいせい",
+    begin_yr: 1989,
+    end_yr: 2100,
+    eto: null
+  }
+]

@@ -7,23 +7,26 @@ $block-height-hl: $block-height/4;
   font-weight: 700;
   margin-top: 10px;
   font-size: 2em;
-  color: $midGray;
+  color: $darkSteel;
 }
 
 .block-container {
   background-color: $white;
   color: $myHair;
   height: $block-height;
-  margin: 15px 0;
+  margin: 15px 2%;
 
   .block-main {
     height: $block-height-main;
     background-color: $white;
+    border-radius: 0 0 10px 10px !important;
     .block-main-left {
       background-color: $white;
+      border-radius: 0 0 10px 10px !important;
     }
     .block-main-right {
       background-color: $white;
+      border-radius: 0 0 10px 10px !important;
     }
   }
 
@@ -32,6 +35,7 @@ $block-height-hl: $block-height/4;
     background-color: $white;
     text-align: center;
     overflow: hidden;
+    border-radius: 3px 3px 0 0;
   }
 
 }
@@ -128,11 +132,11 @@ $block-height-hl: $block-height/4;
 
 .seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl {
   @extend .block-hl;
-  background-color: $myHair !important;
+  background-color: $darkSteel !important;
 }
 
 .block-hl  {
-  border-bottom: 4px solid $iconBlue;
+  border-bottom: 3px solid $iconBlue;
   p {
     font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
     font-size: 1.5em;

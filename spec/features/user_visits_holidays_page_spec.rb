@@ -14,7 +14,7 @@ RSpec.feature "User visits 祝日 page" do
 
   def visit_holidays_page
     visit "/"
-    click_link "祝日"
+    click_link "Holidays"
   end
 end
 
