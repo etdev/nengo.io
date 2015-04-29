@@ -1,6 +1,4 @@
 # coding: utf-8
-require "json"
-
 class Year
   attr_reader :year_seireki
   attr_reader :data_nengo
@@ -14,7 +12,7 @@ class Year
   ELEMENT_LIST_ETO_PATH = "#{Rails.root.join('lib', 'element_list_eto.json')}"
 
   def initialize
-    @jidai_data = load_jidai_data(JIDAI_DATA_FILE)
+    @jidai_data = load_jidai_data(JIDAI_DATA_PATH)
     set_by_seireki(current_year_seireki)
   end
 
@@ -70,13 +68,13 @@ class Year
 
   def get_animal_eto(year_rel)
     year_animal = year_rel == 10 ? year_rel : year_rel % 10
-    animal_list_eto = JSON.parse(ANIMAL_LIST_ETO_PATH)
+    animal_list_eto = JSON.parse(File.read(ANIMAL_LIST_ETO_PATH))
     animal_list_eto.select { |hash| hash["id"] == year_animal }
   end
 
   def get_element_eto(year_rel)
     year_element = year_rel == 12 ? year_rel : year_rel % 12
-    element_list_eto = JSON.parse(ELEMENT_LIST_ETO_PATH)
+    element_list_eto = JSON.parse(File.read(ELEMENT_LIST_ETO_PATH))
     element_list_eto.select { |hash| hash["id"] == year_element }
   end
 
