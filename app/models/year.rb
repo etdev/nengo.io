@@ -46,7 +46,7 @@ class Year
   end
 
   def get_data_nengo(year_seireki)
-    #@jidai_data.select { |jidai| jidai["
+    @jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }
   end
 
   def get_data_eto(year_seireki)
@@ -55,6 +55,7 @@ class Year
     data_eto[:year_rel] = year_rel
     data_eto[:animal] = get_animal_eto(year_rel)
     data_eto[:element] = get_element_eto(year_rel)
+    data_eto
   end
 
   def get_year_eto(year_seireki)
@@ -84,6 +85,7 @@ class Year
   end
 
   def get_koki(year_seireki)
+    year_seireki + 660
   end
 
   def nengo_to_seireki(year_rel:, jidai:)
@@ -102,11 +104,6 @@ class Year
     else
       raise "入力された年が無効です"
     end
-  end
-
-  def self.debug_jidai_data
-    jidai_data_file = File.read(JIDAI_DATA_PATH)
-    JSON.parse(jidai_data_file)
   end
 
   private
