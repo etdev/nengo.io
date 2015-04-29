@@ -20,7 +20,7 @@ $block-height-hl: $block-height/4;
     height: $block-height-main;
     background-color: $white;
     .block-main-left {
-      background-color: $pewter;
+      background-color: $white;
     }
     .block-main-right {
       background-color: $white;
@@ -29,7 +29,7 @@ $block-height-hl: $block-height/4;
 
   .block-hl {
     height: $block-height-hl;
-    background-color: $myHair;
+    background-color: $white;
     text-align: center;
     overflow: hidden;
   }
@@ -59,9 +59,7 @@ $block-height-hl: $block-height/4;
   @extend .seireki-block-main;
   width: 40%;
   float: left;
-  background-color: $gunpowder !important;
   h1 {
-    color: $white;
     text-align: center;
   }
 }
@@ -71,9 +69,7 @@ $block-height-hl: $block-height/4;
   width: 30%;
   float: left;
   text-align: center;
-  background-color: $cutlass !important;
   h1 {
-    color: $white;
     text-align: center;
   }
 }
@@ -83,9 +79,7 @@ $block-height-hl: $block-height/4;
   width: 30%;
   float: left;
   text-align: center;
-  background-color: $gunpowder !important;
   h1 {
-    color: $white;
     text-align: center;
   }
 }
@@ -95,16 +89,13 @@ $block-height-hl: $block-height/4;
   width: 50%;
   float: left;
   text-align: center;
-  background-color: $gunpowder !important;
   h1 {
-    color: $white;
     text-align: center;
   }
 }
 
 .nengo-block-main-right {
   @extend .nengo-block-main-left;
-  background-color: $cutlass !important;
 }
 
 .nenrei-block-main-left {
@@ -112,16 +103,13 @@ $block-height-hl: $block-height/4;
   width: 50%;
   float: left;
   text-align: center;
-  background-color: $gunpowder !important;
   h1 {
-    color: $white;
     text-align: center;
   }
 }
 
 .nenrei-block-main-right {
   @extend .nenrei-block-main-left;
-  background-color: $cutlass !important;
 }
 
 .eto-block-main-left {
@@ -129,24 +117,22 @@ $block-height-hl: $block-height/4;
   width: 50%;
   float: left;
   text-align: center;
-  background-color: $gunpowder !important;
   h1 {
-    color: $white;
     text-align: center;
   }
 }
 
 .eto-block-main-right {
   @extend .eto-block-main-left;
-  background-color: $cutlass !important;
 }
 
 .seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl {
   @extend .block-hl;
+  background-color: $myHair !important;
 }
 
 .block-hl  {
-  border-top: 4px solid $iconBlue;
+  border-bottom: 4px solid $iconBlue;
   p {
     font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
     font-size: 1.5em;
@@ -162,3 +148,4 @@ $block-height-hl: $block-height/4;
   .block-container {
   }
 }
+

@@ -1,5 +1,13 @@
 .nengo-main-container
-  - flash.each do |name, msg|
-    = content_tag :div, msg, class: name
-  = render "block_seireki"
+  .top-pic
+    - flash.each do |name, msg|
+      = content_tag :div, msg, class: name
+    .nengo-top-container 西暦・和暦年号の変換
+    .row
+      = render "block_seireki"
 
+      = render 'block_nengo'
+
+      = render 'block_nenrei'
+
+      = render 'block_eto'
