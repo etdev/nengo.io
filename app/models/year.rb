@@ -11,6 +11,7 @@ class Year
 
   JIDAI_DATA_PATH = "#{Rails.root.join('lib', 'jidai_data.json')}"
   ANIMAL_LIST_ETO_PATH = "#{Rails.root.join('lib', 'animal_list_eto.json')}"
+  ELEMENT_LIST_ETO_PATH = "#{Rails.root.join('lib', 'element_list_eto.json')}"
 
   def initialize
     @jidai_data = load_jidai_data(JIDAI_DATA_FILE)
@@ -44,6 +45,10 @@ class Year
     set_by_seireki(@year_seireki)
   end
 
+  def get_data_nengo(year_seireki)
+    #@jidai_data.select { |jidai| jidai["
+  end
+
   def get_data_eto(year_seireki)
     data_eto = {}
     year_rel = get_year_eto(year_seireki)
@@ -68,10 +73,14 @@ class Year
     animal_list_eto.select { |hash| hash["id"] == year_animal }
   end
 
-  def get_nenrei(year_seireki)
+  def get_element_eto(year_rel)
+    year_element = year_rel == 12 ? year_rel : year_rel % 12
+    element_list_eto = JSON.parse(ELEMENT_LIST_ETO_PATH)
+    element_list_eto.select { |hash| hash["id"] == year_element }
   end
 
-  def get_data_eto(year_seireki)
+  def get_nenrei(year_seireki)
+    current_year_seireki - year_seireki
   end
 
   def get_koki(year_seireki)
@@ -95,6 +104,10 @@ class Year
     end
   end
 
+  def self.debug_jidai_data
+    jidai_data_file = File.read(JIDAI_DATA_PATH)
+    JSON.parse(jidai_data_file)
+  end
 
   private
     def set_for_seireki(year_seireki)
@@ -108,6 +121,7 @@ class Year
       jidai_data_file = File.read(jidai_data_filename)
       JSON.parse(jidai_data_file)
     end
+
 
 # Things that can change:
 #  * Seireki year
