@@ -44,7 +44,7 @@ class Year
   end
 
   def get_data_nengo(year_seireki)
-    @jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }
+    @jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }.first
   end
 
   def get_data_eto(year_seireki)

@@ -1,6 +1,6 @@
-$block-height: 136px;
-$block-height-main: 3*$block-height/4;
-$block-height-hl: $block-height/4;
+$block-height: 190px;
+$block-height-main: 4*$block-height/5;
+$block-height-hl: $block-height/5;
 
 .nengo-top-container {
   text-align: center;
@@ -145,11 +145,6 @@ $block-height-hl: $block-height/4;
     line-height: $block-height-hl;
     color: $white;
     text-align: left;
-  }
-}
-
-@media (max-width: 768px) {
-  .block-container {
   }
 }
 
