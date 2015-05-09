@@ -113,6 +113,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.0.1)
+      byebug (~> 3.4)
+      pry (~> 0.10)
     rack (1.6.0)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -227,6 +230,7 @@ DEPENDENCIES
   monban-generators
   pg
   pry
+  pry-byebug
   rails (= 4.2.0)
   rspec-rails
   sass-rails (~> 5.0)

@@ -1,18 +1,17 @@
 # coding: utf-8
 class Year
   attr_reader :year_seireki
+  attr_reader :year_koki
+  attr_reader :year_nengo
   attr_reader :data_nengo
-  attr_reader :nenrei
   attr_reader :data_eto
-  attr_reader :koki
-  attr_reader :jidai_data
+  attr_reader :nenrei
 
   JIDAI_DATA_PATH = "#{Rails.root.join('lib', 'jidai_data.json')}"
   ANIMAL_LIST_ETO_PATH = "#{Rails.root.join('lib', 'animal_list_eto.json')}"
   ELEMENT_LIST_ETO_PATH = "#{Rails.root.join('lib', 'element_list_eto.json')}"
 
   def initialize
-    @jidai_data = load_jidai_data(JIDAI_DATA_PATH)
     set_by_seireki(current_year_seireki)
   end
 
@@ -44,7 +43,9 @@ class Year
   end
 
   def get_data_nengo(year_seireki)
-    @jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }.first
+    data_nengo = jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }.first
+    data_nengo["year_rel"] = year_seireki - data_nengo["begin_yr"]
+    data_nengo
   end
 
   def get_data_eto(year_seireki)
@@ -69,13 +70,13 @@ class Year
   def get_animal_eto(year_rel)
     year_animal = year_rel == 10 ? year_rel : year_rel % 10
     animal_list_eto = JSON.parse(File.read(ANIMAL_LIST_ETO_PATH))
-    animal_list_eto.select { |hash| hash["id"] == year_animal }
+    animal_list_eto.select { |hash| hash["id"] == year_animal }.first
   end
 
   def get_element_eto(year_rel)
     year_element = year_rel == 12 ? year_rel : year_rel % 12
     element_list_eto = JSON.parse(File.read(ELEMENT_LIST_ETO_PATH))
-    element_list_eto.select { |hash| hash["id"] == year_element }
+    element_list_eto.select { |hash| hash["id"] == year_element }.first
   end
 
   def get_nenrei(year_seireki)
@@ -87,7 +88,7 @@ class Year
   end
 
   def nengo_to_seireki(year_rel:, jidai:)
-    current_jidai = @jidai_data.select { |jidai_hash| jidai_hash["name"] == jidai }
+    current_jidai = jidai_data.select { |jidai_hash| jidai_hash["name"] == jidai }
     current_jidai["begin_yr"].to_i + year_rel
   end
 
@@ -105,28 +106,9 @@ class Year
   end
 
   private
-    def set_for_seireki(year_seireki)
-      @data_nengo = get_data_nengo(@year_seireki)
-      @nenrei = get_nenrei(@year_seireki)
-      @data_eto = get_data_eto(@year_seireki)
-      @koki = get_koki(@year_seireki)
-    end
-
-    def load_jidai_data(jidai_data_filename)
-      jidai_data_file = File.read(jidai_data_filename)
+    def jidai_data
+      jidai_data_file = File.read(JIDAI_DATA_PATH)
       JSON.parse(jidai_data_file)
     end
 
-
-# Things that can change:
-#  * Seireki year
-#  * Nengo year
-#  * Nengo jidai
-#  * Nenrei
-#  * Koki
-
-# Things I want to do:
-# Populate all fields from a Seireki year
-# Populate all fields from a Nengo year + jidai
-# Populate all fields from a Nenrei
 end

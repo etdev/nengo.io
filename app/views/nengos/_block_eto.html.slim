@@ -3,7 +3,9 @@
     .eto-block-hl
       p Eto
     .eto-block-main-left
-      p
-        = @current_year.data_eto
+      h2
+        = @current_year.data_eto[:year_rel]
     .eto-block-main-right
-      p 干支
+      h2
+        = @current_year.data_eto[:animal]["reading_kanji"]
+        = @current_year.data_eto[:element]["name"]
