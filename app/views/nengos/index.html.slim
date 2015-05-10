@@ -1,4 +1,6 @@
 .nengo-main-container
+  - if @edit_mode.present?
+    p EDIT_MODE ENABLED
   .top-pic
     - flash.each do |name, msg|
       = content_tag :div, msg, class: name
@@ -6,10 +8,12 @@
     .row
       = render "block_seireki"
 
-      = render 'block_nengo'
+      = render "block_nengo"
 
-      = render 'block_nenrei'
+      = render "block_nenrei"
 
-      = render 'block_eto'
+      = render "block_eto"
 
-      = render 'block_koki'
+      = render "block_koki"
+
+      = render "refresh_buttons"
