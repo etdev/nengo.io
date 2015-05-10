@@ -40,11 +40,11 @@ $block-height-hl: $block-height/5;
 
 }
 
-.seireki-block-container, .nengo-block-container, .nenrei-block-container, .eto-block-container {
+.seireki-block-container, .nengo-block-container, .nenrei-block-container, .eto-block-container, .koki-block-container {
   @extend .block-container;
 }
 
-.seireki-block-main, .nengo-block-main, .nenrei-block-main, .eto-block-main {
+.seireki-block-main, .nengo-block-main, .nenrei-block-main, .eto-block-main, .koki-block-main {
   @extend .block-main;
   h1 {
     color: $lessDarkSteel;
@@ -81,9 +81,6 @@ $block-height-hl: $block-height/5;
   width: 30%;
   float: left;
   text-align: center;
-  h1 {
-    text-align: center;
-  }
 }
 
 .nengo-block-main-left {
@@ -91,9 +88,6 @@ $block-height-hl: $block-height/5;
   width: 50%;
   float: left;
   text-align: center;
-  h1 {
-    text-align: center;
-  }
 }
 
 .nengo-block-main-right {
@@ -105,9 +99,6 @@ $block-height-hl: $block-height/5;
   width: 50%;
   float: left;
   text-align: center;
-  h1 {
-    text-align: center;
-  }
 }
 
 .nenrei-block-main-right {
@@ -119,16 +110,20 @@ $block-height-hl: $block-height/5;
   width: 50%;
   float: left;
   text-align: center;
-  h1 {
-    text-align: center;
-  }
 }
 
 .eto-block-main-right {
   @extend .eto-block-main-left;
 }
 
-.seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl {
+.koki-block-main-left {
+  @extend .koki-block-main;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+.seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl, .koki-block-hl {
   @extend .block-hl;
   background-color: $darkSteel !important;
 }

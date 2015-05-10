@@ -20,7 +20,7 @@ class Year
     @data_nengo = get_data_nengo(@year_seireki)
     @nenrei = get_nenrei(@year_seireki)
     @data_eto = get_data_eto(@year_seireki)
-    @koki = get_koki(@year_seireki)
+    @year_koki = get_koki(@year_seireki)
   end
 
   def current_year_seireki
