@@ -1,25 +1,5 @@
 .holidays-container-main
   br
-  h3.holidays-heading 2015年祝日
-  table.table-bordered.table-hover data-role="holidays" class="table-responsive table-bordered table-striped"
-    tr
-      th.name-head 祝日名
-      th.year-head 日付
-    - @years.first.each do |holiday|
-      tr
-        td.name = holiday[:name]
-        td.year_seireki = "#{holiday[:year_seireki]}年#{holiday[:month]}月#{holiday[:day]}日"
-
-  br
-  br
-
-  h3.holidays-heading 2016年祝日
-  table.table-bordered.table-hover data-role="holidays" class="table-responsive table-bordered table-striped"
-    tr
-      th.name-head 祝日名
-      th.year-head 日付
-    - @years[1].each do |holiday|
-      tr
-        td.name = holiday[:name]
-        td.year_seireki = "#{holiday[:year_seireki]}年#{holiday[:month]}月#{holiday[:day]}日"
+  - @years.each do |current_year|
+    = render 'holiday_table', current_year: current_year
 

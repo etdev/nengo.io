@@ -1,0 +1,11 @@
+h3.holidays-heading
+  = current_year.first[:year_seireki]
+  | 年祝日
+table.table-bordered.table-hover data-role="holidays" class="table-responsive table-bordered table-striped"
+  tr
+    th.name-head 祝日名
+    th.year-head 日付
+  - current_year.each do |holiday|
+    tr
+      td.name = holiday[:name]
+      td.year_seireki = "#{holiday[:year_seireki]}年#{holiday[:month]}月#{holiday[:day]}日"
