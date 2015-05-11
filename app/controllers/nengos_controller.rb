@@ -4,7 +4,6 @@ class NengosController < ApplicationController
   end
 
   def update
-    binding.pry
     edit_mode = edit_mode_from_params(params)
     @current_year = reload_data(edit_mode)
     render :index

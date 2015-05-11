@@ -5,9 +5,10 @@ $block-height-hl: $block-height/5;
 .nengo-top-container {
   text-align: center;
   font-weight: 700;
-  margin-top: 10px;
-  font-size: 2em;
-  color: $darkSteel;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 3em;
+  color: $myHair;
 }
 
 .block-container {
@@ -85,7 +86,7 @@ $block-height-hl: $block-height/5;
   text-align: center !important;
 }
 
-.seireki-update-year, .nengo-edit-jidai, .nengo-update-jidai, .nengo-edit-year, .nengo-update-year {
+.seireki-update-year, .nengo-edit-jidai, .nengo-update-jidai, .nengo-edit-year, .nengo-update-year, {
   @extend .seireki-edit-year
 }
 

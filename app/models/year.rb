@@ -70,9 +70,10 @@ class Year
   end
 
   def get_animal_eto(year_rel)
-    year_animal = year_rel == 10 ? year_rel : year_rel % 10
+    year_animal = year_rel == 10 ? year_rel : (year_rel % 10) + 1
     animal_list_eto = JSON.parse(File.read(ANIMAL_LIST_ETO_PATH))
-    animal_list_eto.select { |hash| hash["id"] == year_animal }.first
+    year_animal = animal_list_eto.select { |hash| hash["id"] == year_animal }.first
+    year_animal
   end
 
   def get_element_eto(year_rel)
