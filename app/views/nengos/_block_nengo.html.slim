@@ -12,7 +12,6 @@
       - else
         h2.nengo-update-jidai
           = @current_year.data_nengo["name"]
-        = hidden_field_tag(:edit_mode, "nengo")
         = hidden_field_tag(:year_seireki, @current_year.year_seireki)
     .block-main-center
       - if @edit_mode.present? && @edit_mode == "nengo"

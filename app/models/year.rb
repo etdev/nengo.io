@@ -46,7 +46,7 @@ class Year
 
   def get_data_nengo(year_seireki)
     data_nengo = @jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }.first
-    data_nengo["year_rel"] = year_seireki - data_nengo["begin_yr"]
+    data_nengo["year_rel"] = year_seireki - data_nengo["begin_yr"] + 1
     data_nengo
   end
 
@@ -91,7 +91,7 @@ class Year
 
   def nengo_to_seireki(year_rel:, jidai:)
     current_jidai = @jidai_data.select { |jidai_hash| jidai_hash["name"] == jidai }.first
-    current_jidai["begin_yr"].to_i + year_rel + 1
+    current_jidai["begin_yr"].to_i + year_rel - 1
   end
 
   def eto_first_three(year_seireki)
