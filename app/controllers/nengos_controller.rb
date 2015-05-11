@@ -1,12 +1,13 @@
 class NengosController < ApplicationController
   def index
     @current_year = Year.new
+    @current_year.set_by_seireki(params[:year_seireki].to_i) if params[:year_seireki].present?
   end
 
   def update
     edit_mode = edit_mode_from_params(params)
-    @current_year = reload_data(edit_mode)
-    render :index
+    current_year = reload_data(edit_mode)
+    redirect_to action: :index, year_seireki: current_year.year_seireki
   end
 
   def edit
@@ -26,7 +27,7 @@ class NengosController < ApplicationController
       when "nengo"
         current_year.set_by_nengo({ year_rel: params[:year_rel_nengo].to_i, jidai: params[:jidai] })
       when "nenrei"
-        current_year.set_by_nenrei(params[:nenrei].to_i)
+        current_year.set_by_nenrei(params[:year_nenrei].to_i)
       when "koki"
         current_year.set_by_koki(params[:year_koki].to_i)
       else

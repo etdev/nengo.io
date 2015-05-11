@@ -86,7 +86,7 @@ $block-height-hl: $block-height/5;
   text-align: center !important;
 }
 
-.seireki-update-year, .nengo-edit-jidai, .nengo-update-jidai, .nengo-edit-year, .nengo-update-year, {
+.seireki-update-year, .nengo-edit-jidai, .nengo-update-jidai, .nengo-edit-year, .nengo-update-year, .nenrei-edit-year, .nenrei-update-year, .eto-year, .eto-info, .koki-edit-year, .koki-update-year {
   @extend .seireki-edit-year
 }
 
@@ -98,11 +98,11 @@ $block-height-hl: $block-height/5;
   font-size: 1.3em;
 }
 
-.edit-nengo, .edit-nenrei, .edit-koki { 
+.edit-nengo, .edit-nenrei, .edit-koki {
   @extend .edit-seireki
 }
 
-.update-seireki, .update-nengo, .update_nenrei, .update_koki {
+.update-seireki, .update-nengo, .update-nenrei, .update-koki {
   @extend .edit-seireki;
 }
 

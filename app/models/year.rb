@@ -40,7 +40,7 @@ class Year
   end
 
   def set_by_koki(koki)
-    @year_seireki = current_year_seireki + 660
+    @year_seireki = koki - 660
     set_by_seireki(@year_seireki)
   end
 
