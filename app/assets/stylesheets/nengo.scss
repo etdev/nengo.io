@@ -58,6 +58,10 @@ $block-height-hl: $block-height/5;
 .block-main-center, .block-main-right {
   @extend .block-main-left;
   width: 30%;
+  h2 {
+    font-size: 3em;
+    margin-top: 36px;
+  }
 }
 
 .block-hl  {
@@ -72,4 +76,30 @@ $block-height-hl: $block-height/5;
     text-align: left;
   }
 }
+
+.seireki-edit-year {
+  @extend .edit-seireki;
+  height: 70px !important;
+  margin-top: 31px !important;
+  font-size: 3em !important;
+  text-align: center !important;
+}
+
+.seireki-update-year {
+  @extend .seireki-edit-year
+}
+
+.edit-seireki {
+  width: 65%;
+  height: 80px;
+  margin: auto;
+  margin-top: 20px;
+  font-size: 1.3em;
+}
+
+.update-seireki {
+  @extend .edit-seireki;
+}
+
+
 
