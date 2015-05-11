@@ -7,7 +7,7 @@ $block-height-hl: $block-height/5;
   font-weight: 700;
   margin-top: 20px;
   margin-bottom: 10px;
-  font-size: 3em;
+  font-size: 2em;
   color: $myHair;
 }
 
@@ -60,7 +60,7 @@ $block-height-hl: $block-height/5;
   @extend .block-main-left;
   width: 30%;
   h2 {
-    font-size: 3em;
+    font-size: 2em;
     margin-top: 36px;
   }
 }
@@ -82,7 +82,7 @@ $block-height-hl: $block-height/5;
   @extend .edit-seireki;
   height: 70px !important;
   margin-top: 31px !important;
-  font-size: 3em !important;
+  font-size: 2em !important;
   text-align: center !important;
 }
 
@@ -106,5 +106,8 @@ $block-height-hl: $block-height/5;
   @extend .edit-seireki;
 }
 
-
-
+@media (max-width: 768px) {
+  .edit-seireki {
+    width: 90% !important;
+  }
+}
