@@ -1,11 +1,12 @@
-$block-height: 190px;
+$block-height: 160px;
 $block-height-main: 4*$block-height/5;
 $block-height-hl: $block-height/5;
+$edit-button-height: 60px;
 
 .nengo-top-container {
   text-align: center;
   font-weight: 700;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-size: 2em;
   color: $myHair;
@@ -54,14 +55,15 @@ $block-height-hl: $block-height/5;
   width: 40%;
   float: left;
   text-align: center;
+  line-height: $block-height-main;
 }
 
 .block-main-center, .block-main-right {
   @extend .block-main-left;
   width: 30%;
+  line-height: $block-height-main;
   h2 {
     font-size: 2em;
-    margin-top: 36px;
   }
 }
 
@@ -80,21 +82,28 @@ $block-height-hl: $block-height/5;
 
 .seireki-edit-year {
   @extend .edit-seireki;
-  height: 70px !important;
-  margin-top: 31px !important;
   font-size: 2em !important;
   text-align: center !important;
 }
 
 .seireki-update-year, .nengo-edit-jidai, .nengo-update-jidai, .nengo-edit-year, .nengo-update-year, .nenrei-edit-year, .nenrei-update-year, .eto-year, .eto-info, .koki-edit-year, .koki-update-year {
-  @extend .seireki-edit-year
+  @extend .edit-seireki;
+  font-size: 2em !important;
+  text-align: center !important;
+  margin: 0;
+  line-height: $block-height-main;
+}
+
+.seireki-edit-year, .nengo-edit-jidai, .nengo-edit-year, .nenrei-edit-year, .koki-edit-year {
+  height: $edit-button-height;
+  margin-top: ($block-height-main - $edit-button-height)/2;
+  margin-left: 5%;
 }
 
 .edit-seireki {
-  width: 65%;
-  height: 80px;
-  margin: auto;
-  margin-top: 20px;
+  min-width: 65%;
+  max-width: 80%;
+  height: $edit-button-height;
   font-size: 1.3em;
 }
 
