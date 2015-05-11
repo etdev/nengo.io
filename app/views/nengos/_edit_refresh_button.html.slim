@@ -1,4 +1,4 @@
 - if @edit_mode.present?
-  input type="submit" class="btn btn-info" value="Update"
+  input type="submit" class="btn btn-info update-#{block_type}" value="Update"
 - else
-  = link_to "Edit", { action: :edit, current_year_seireki: @current_year.year_seireki }, { class: "btn btn-primary" }
+  input type="submit" class="btn btn-info edit-#{block_type}" value="Edit"

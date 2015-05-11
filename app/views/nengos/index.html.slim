@@ -2,15 +2,8 @@
   .top-pic
     .nengo-top-container 西暦・和暦年号の変換
     .row
-      - if @edit_mode.present?
-        = render "block_seireki_edit"
-        = render "block_nengo_edit"
-        = render "block_nenrei_edit"
-        = render "block_eto"
-        = render "block_koki_edit"
-      - else
-        = render "block_seireki"
-        = render "block_nengo"
-        = render "block_nenrei"
-        = render "block_eto"
-        = render "block_koki"
+      = render "block_seireki"
+      = render "block_nengo"
+      = render "block_nenrei"
+      = render "block_eto"
+      = render "block_koki"

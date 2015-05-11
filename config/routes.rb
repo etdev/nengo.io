@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  resource :nengos, only: [:index, :edit] do
+  resource :nengos, only: [:index] do
     collection do
       post "update" => "nengos#update"
+      post "edit" => "nengos#edit"
     end
   end
   resources :holidays, only: [:index]
