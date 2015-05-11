@@ -32,7 +32,7 @@ $block-height-hl: $block-height/5;
 
   .block-hl {
     height: $block-height-hl;
-    background-color: $white;
+    background-color: $darkSteel;
     text-align: center;
     overflow: hidden;
     border-radius: 3px 3px 0 0;
@@ -42,6 +42,22 @@ $block-height-hl: $block-height/5;
 
 .seireki-block-container, .nengo-block-container, .nenrei-block-container, .eto-block-container, .koki-block-container {
   @extend .block-container;
+}
+
+.seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl, .koki-block-hl {
+  @extend .block-hl;
+}
+
+.block-main-left {
+  @extend .block-main;
+  width: 40%;
+  float: left;
+  text-align: center;
+}
+
+.block-main-center, .block-main-right {
+  @extend .block-main-left;
+  width: 30%;
 }
 
 .seireki-block-main, .nengo-block-main, .nenrei-block-main, .eto-block-main, .koki-block-main {
@@ -64,6 +80,7 @@ $block-height-hl: $block-height/5;
   width: 40%;
   float: left;
   text-align: center;
+  height: $block-height-main;
 }
 
 .seireki-block-main-center {
@@ -91,7 +108,7 @@ $block-height-hl: $block-height/5;
 }
 
 .nengo-block-main-right {
-  @extend .nengo-block-main-left;
+  @extend .seireki-block-main-right;
 }
 
 .nenrei-block-main-left {
@@ -121,11 +138,6 @@ $block-height-hl: $block-height/5;
   width: 50%;
   float: left;
   text-align: center;
-}
-
-.seireki-block-hl, .nengo-block-hl, .nenrei-block-hl, .eto-block-hl, .koki-block-hl {
-  @extend .block-hl;
-  background-color: $darkSteel !important;
 }
 
 .block-hl  {

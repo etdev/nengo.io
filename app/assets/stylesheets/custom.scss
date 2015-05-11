@@ -14,3 +14,7 @@ body {
   @include default-font-jp;
 }
 
+.alert {
+  text-align: center;
+  margin: 10px 2%;
+}

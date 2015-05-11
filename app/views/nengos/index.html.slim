@@ -1,9 +1,5 @@
 .nengo-main-container
-  - if @edit_mode.present?
-    p EDIT_MODE ENABLED
   .top-pic
-    - flash.each do |name, msg|
-      = content_tag :div, msg, class: name
     .nengo-top-container 西暦・和暦年号の変換
     .row
       - if @edit_mode.present?
