@@ -1,6 +1,8 @@
-- if @edit_mode.present?
+- if @edit_mode.present? && @edit_mode == block_type
   .form-group
-    input type="submit" class="btn btn-success update-#{block_type} form-control" value="Update"
+    = hidden_field_tag(:refresh_type, block_type)
+    = submit_tag "Update", class: "btn btn-success update-#{block_type} form-control"
 - else
   .form-group
-    input type="submit" class="btn btn-primary edit-#{block_type} form-control" value="Edit"
+    = hidden_field_tag(:refresh_type, block_type)
+    = submit_tag "Edit", class: "btn btn-primary update-#{block_type} form-control"

@@ -1,21 +1,17 @@
 .col-sm-12.col-md-6
   .seireki-block-container
-    - if @edit_mode.present?
-      = form_tag "/nengos/update"
-    - else
-      = form_tag "/nengos/edit", class: "form-group"
+    = render 'edit_forms', edit_mode: @edit_mode
     .block-hl
       p Seireki
     .block-main-left
-      - if @edit_mode.present?
+      - if @edit_mode.present? && @edit_mode == "seireki"
         .form-group
           = text_field_tag(:year_seireki, @current_year.year_seireki, class: "seireki-edit-year form-control")
       - else
         h2.seireki-update-year
           = "#{@current_year.year_seireki}年"
-        = hidden_field_tag(:edit_mode, 1)
+        = hidden_field_tag(:edit_mode, "seireki")
         = hidden_field_tag(:year_seireki, @current_year.year_seireki)
-      = hidden_field_tag(:refresh_type, "seireki")
     .block-main-center
       h2 中
     .block-main-right

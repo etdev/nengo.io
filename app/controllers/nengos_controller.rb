@@ -9,7 +9,7 @@ class NengosController < ApplicationController
   end
 
   def edit
-    @edit_mode = 1
+    @edit_mode = params[:refresh_type]
     @current_year = Year.new
     @current_year.set_by_seireki(params[:year_seireki].to_i)
     render :index

@@ -6,12 +6,14 @@ class Year
   attr_reader :data_nengo
   attr_reader :data_eto
   attr_reader :nenrei
+  attr_reader :jidai_data
 
   JIDAI_DATA_PATH = "#{Rails.root.join('lib', 'jidai_data.json')}"
   ANIMAL_LIST_ETO_PATH = "#{Rails.root.join('lib', 'animal_list_eto.json')}"
   ELEMENT_LIST_ETO_PATH = "#{Rails.root.join('lib', 'element_list_eto.json')}"
 
   def initialize
+    @jidai_data = load_jidai_data()
     set_by_seireki(current_year_seireki)
   end
 
@@ -43,7 +45,7 @@ class Year
   end
 
   def get_data_nengo(year_seireki)
-    data_nengo = jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }.first
+    data_nengo = @jidai_data.select { |jidai| jidai["begin_yr"] <= year_seireki && jidai["end_yr"] >= year_seireki }.first
     data_nengo["year_rel"] = year_seireki - data_nengo["begin_yr"]
     data_nengo
   end
@@ -88,8 +90,8 @@ class Year
   end
 
   def nengo_to_seireki(year_rel:, jidai:)
-    current_jidai = jidai_data.select { |jidai_hash| jidai_hash["name"] == jidai }
-    current_jidai["begin_yr"].to_i + year_rel
+    current_jidai = @jidai_data.select { |jidai_hash| jidai_hash["name"] == jidai }.first
+    current_jidai["begin_yr"].to_i + year_rel + 1
   end
 
   def eto_first_three(year_seireki)
@@ -106,7 +108,7 @@ class Year
   end
 
   private
-    def jidai_data
+    def load_jidai_data
       jidai_data_file = File.read(JIDAI_DATA_PATH)
       JSON.parse(jidai_data_file)
     end
