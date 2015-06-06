@@ -6,9 +6,13 @@
       .page-subheader
         | 年号、年齢、干支それぞれの変換をしてみませんか？
         a href=about_path   もっと詳しく->
-    .row
-      = render "block_seireki"
-      /= render "block_nengo"
-      /= render "block_nenrei"
-      /= render "block_eto"
-      /= render "block_koki"
+    .container
+      .row
+        = render "block_seireki"
+        = render "block_nengo"
+        = render "block_nengo"
+        = render "block_seireki"
+      .row
+        /= render "block_nenrei"
+        /= render "block_eto"
+        /= render "block_koki"

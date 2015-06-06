@@ -1,24 +1,24 @@
-.container
-  .col-sm-12.col-md-3
-    .block
-      .block-header
-        | Seireki
-      .block-subheader
-        | 西暦の日付から探す
-      .form-group
-        = label_tag("西暦の年")
-        = text_field_tag(:year_seireki, @current_year.year_seireki)
+.col-sm-12.col-md-6
+  .block
+    .block-header
+      | Seireki
+    .block-subheader
+      | 西暦の日付から探す
+    .form-group
+      = label_tag("西暦の年")
+      = text_field_tag(:year_seireki, @current_year.year_seireki)
+      = submit_tag("SUBMIT")
 
-      /= render 'edit_forms', edit_mode: @edit_mode
-      /.block-main-left
-        /- if @edit_mode.present? && @edit_mode == "seireki"
-          /.form-group
-            /= text_field_tag(:year_seireki, @current_year.year_seireki, class: "seireki-edit-year form-control")
-        /- else
-          /h2.seireki-update-year
-            /= "#{@current_year.year_seireki}年"
-          /= hidden_field_tag(:year_seireki, @current_year.year_seireki)
-      /.block-main-center
-        /h2
-      /.block-main-right
-        /= render "edit_refresh_button", block_type: "seireki"
+    /= render 'edit_forms', edit_mode: @edit_mode
+    /.block-main-left
+      /- if @edit_mode.present? && @edit_mode == "seireki"
+        /.form-group
+          /= text_field_tag(:year_seireki, @current_year.year_seireki, class: "seireki-edit-year form-control")
+      /- else
+        /h2.seireki-update-year
+          /= "#{@current_year.year_seireki}年"
+        /= hidden_field_tag(:year_seireki, @current_year.year_seireki)
+    /.block-main-center
+      /h2
+    /.block-main-right
+      /= render "edit_refresh_button", block_type: "seireki"
