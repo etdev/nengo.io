@@ -17,6 +17,10 @@ class NengosController < ApplicationController
     render :index
   end
 
+  def about
+
+  end
+
   private
     def reload_data(data)
       # seireki: year; nengo: year, jidai; nenrei: year, eto: X, koki: year

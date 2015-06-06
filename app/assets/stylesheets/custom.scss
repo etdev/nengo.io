@@ -1,6 +1,6 @@
 // body
 body {
-  background: $lightGrayNew;
+  background: $lightBlue;
 }
 
 .jumbotron {
@@ -17,4 +17,30 @@ body {
 .alert {
   text-align: center;
   margin: 10px 2%;
+}
+
+.page-subheader {
+  color: $lightGray;
+  text-align: center;
+  font-size: 19.6px;
+  font-weight: 800px;
+  a {
+    color: $orange;
+  }
+}
+
+.form-group {
+  input[type="text"] {
+    width: 100%;
+    height: 39px;
+    color: $midGrayLight;
+    border-radius: 5px;
+    border: 1px solid $lighterGray;
+    margin-top: 5px !important;
+    padding-left: 10px;
+  }
+  label {
+    margin-top: 10px !important;
+    color: $midGray;
+  }
 }

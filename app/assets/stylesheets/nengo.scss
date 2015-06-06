@@ -4,12 +4,15 @@ $block-height-hl: $block-height/5;
 $edit-button-height: 60px;
 
 .nengo-top-container {
+  height: 179px;
+}
+
+.page-header {
+  border: none !important;
   text-align: center;
   font-weight: 700;
-  margin-top: 15px;
-  margin-bottom: 10px;
-  font-size: 2em;
-  color: $myHair;
+  font-size: 48px;
+  color: $darkerBlue;
 }
 
 .block-container {
@@ -113,6 +116,31 @@ $edit-button-height: 60px;
 
 .update-seireki, .update-nengo, .update-nenrei, .update-koki {
   @extend .edit-seireki;
+}
+
+// redesign
+.block {
+  border-radius: 5px;
+  padding: 20px 40px;
+  height: 300px;
+  width: 415px;
+  background-color: $white;
+  border: 1px solid $lighterGray;
+}
+
+.block-header {
+  color: $orange;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-size: 2.1em;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 0 5px 0;
+}
+
+.block-subheader {
+  color: $darkGray;
+  font-size: 20px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {

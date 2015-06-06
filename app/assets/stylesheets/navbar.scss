@@ -1,14 +1,15 @@
 // navbar
-$navbarHeight: 50px;
+$navbarHeight: 70px;
 
 nav.navbar.navbar-default {
-  background: $myHair;
+  background: $lightBlue;
   margin-bottom: 0px;
-  border-bottom: 3px solid $pewter;
+  border: none !important;
+  color: $orange;
 }
 
 a.brand-logo {
-  font-size: 1.9em;
+  font-size: 2.6em;
   font-weight: 500;
   float: left;
   padding-left: 0.5em;
@@ -19,7 +20,7 @@ a.brand-logo {
 }
 
 a.navbar-brand.brand-logo {
-  color: $white;
+  color: $orange;
   margin-top: ($navbarHeight - 50)/2;
 }
 
@@ -31,14 +32,14 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-header .navbar-toggle .icon-bar {
-  background-color: $white;
+  background-color: $orange;
 }
 
 .navbar-header .navbar-toggle {
   border: none !important;
   margin-top: ($navbarHeight - 50)/2 + 8;
   &:hover {
-    background: $darkSteel !important;
+    background: $white !important;
   }
 }
 
@@ -47,15 +48,17 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-collapse ul.nav.navbar-nav li a {
-  font-size: 1.1em;
+  font-size: 1.4em;
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   line-height: $navbarHeight;
   font-weight: 600;
   text-align: center;
-  color: $white;
+  color: $orange;
   padding: 0 15px;
 
   &:hover {
-    background: $darkSteel;
+    //background: $white;
+    color: $pewter;
   }
 }
 

@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   end
   resources :holidays, only: [:index]
   resource :app_download, only: [:show]
+  get "about" => "nengos#about"
   root to: "nengos#index"
 end
