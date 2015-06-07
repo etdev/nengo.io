@@ -6,9 +6,9 @@ $sp-mult: 1.39;
 
 .nengo-top-container {
   @include bp(sp) {
-    height: ($sp-mult * 15vh);
+    height: ($sp-mult * 20vh);
   }
-  height: 15vh;
+  height: 20vh;
 }
 
 .block-container {

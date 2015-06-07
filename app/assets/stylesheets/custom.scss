@@ -22,14 +22,16 @@ body {
   border: none !important;
   text-align: center;
   font-weight: 700;
-  font-size: 4vh;
+  font-size: 4vmax;
   color: $darkerBlue;
 }
 
 .page-subheader {
   color: $lightGray;
   text-align: center;
-  font-size: 2.2vh;
+  font-size: 2.2vmax;
+  padding-left: 2vh;
+  padding-right: 2vh;
   font-weight: 500;
   a {
     color: $orange;

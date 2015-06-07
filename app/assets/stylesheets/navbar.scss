@@ -9,10 +9,10 @@ nav.navbar.navbar-default {
 }
 
 a.brand-logo {
-  font-size: 2.6em;
+  padding: 0 0 0 2vmax;
+  font-size: 5vmax;
   font-weight: 500;
   float: left;
-  padding-left: 0.5em;
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   &:hover {
     color: $pewter !important;
@@ -31,16 +31,17 @@ a.navbar-brand.brand-logo {
   margin-left: 16px;
 }
 
-.navbar-header .navbar-toggle .icon-bar {
-  background-color: $orange;
-}
-
 .navbar-header .navbar-toggle {
   border: 1px solid $orange;
-  line-height: $navbarHeight;
+  margin-right: 2vmax !important;
+  margin-top: ($navbarHeight / 4);
   &:hover {
     //background: $white !important;
   }
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+  background-color: $orange;
 }
 
 .navbar-collapse {
@@ -78,14 +79,22 @@ a.navbar-brand.brand-logo {
 
 @media (max-width: 768px) {
   a.navbar-brand.brand-logo, .app-icon, {
-    height: 10.4vh;
-    line-height: 10vh;
+    height: 8.4vh;
+    line-height: 8.4vh;
   }
+
   .navbar-header .navbar-toggle {
-    margin-top: 5vh;
-    line-height: 10vh;
+    line-height: 8.4vh;
   }
+
   .navbar-collapse ul.nav.navbar-nav li a {
     border-bottom: 1px solid #ECECEC;
+  }
+
+  /* switch to white navbar */
+  nav.navbar.navbar-default {
+    background: $white;
+    margin-bottom: 0px;
+    border: 1px solid #EEE;
   }
 }
