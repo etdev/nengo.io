@@ -1,6 +1,7 @@
-- flash.each do |name, msg|
-  - if name == "notice"
-    = content_tag :div, msg, class: "alert alert-danger"
-  - elsif name == "success"
-    = content_tag :div, msg, class: "alert alert-success"
+.container
+  - flash.each do |name, msg|
+    - if name == "notice"
+      = content_tag :div, msg, class: "alert alert-danger"
+    - elsif name == "success"
+      = content_tag :div, msg, class: "alert alert-success"
 

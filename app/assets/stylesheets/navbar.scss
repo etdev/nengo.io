@@ -8,20 +8,16 @@ nav.navbar.navbar-default {
   color: $orange;
 }
 
-a.brand-logo {
-  padding: 0 0 0 2vmax;
-  font-size: 5vmax;
+a.navbar-brand.brand-logo {
   font-weight: 500;
   float: left;
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  font-size: 3.6vh;
+  line-height: 6.5vh;
+  color: $orange;
   &:hover {
     color: $pewter !important;
   }
-}
-
-a.navbar-brand.brand-logo {
-  color: $orange;
-  line-height: $navbarHeight;
 }
 
 .app-icon {
@@ -33,7 +29,7 @@ a.navbar-brand.brand-logo {
 
 .navbar-header .navbar-toggle {
   border: 1px solid $orange;
-  margin-right: 2vmax !important;
+  margin-right: 2vh !important;
   margin-top: ($navbarHeight / 4);
   &:hover {
     //background: $white !important;
@@ -83,8 +79,11 @@ a.navbar-brand.brand-logo {
 
 @media (max-width: 768px) {
   a.navbar-brand.brand-logo, .app-icon, {
-    height: 8.4vmax;
-    line-height: 8.4vmax;
+    height: 8.4vh;
+    margin: 0 !important;
+    padding: 0 0 0 2vh;
+    line-height: 8.4vh;
+    font-size: 5vh;
   }
 
   .navbar-header .navbar-toggle {

@@ -5,8 +5,7 @@ class NengosController < ApplicationController
   end
 
   def update
-    edit_mode = edit_mode_from_params(params)
-    current_year = reload_data(edit_mode)
+    current_year = reload_data(submit_type)
     redirect_to action: :index, year_seireki: current_year.year_seireki
   end
 
@@ -31,7 +30,7 @@ class NengosController < ApplicationController
       when "nengo"
         current_year.set_by_nengo({
           year_rel: params[:year_rel_nengo].to_i,
-          jidai: params[:jidai]
+          jidai: params[:jidai][/[^\s]+/]
         })
       when "nenrei"
         current_year.set_by_nenrei(params[:year_nenrei].to_i)
@@ -47,6 +46,10 @@ class NengosController < ApplicationController
       %w(seireki nengo nenrei koki).each do |type|
         return type if data[type].present?
       end
+    end
+
+    def submit_type
+      params["submit-type"]
     end
 end
 
