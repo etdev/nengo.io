@@ -1,15 +1,12 @@
 .col-sm-12.col-md-6
-  .nenrei-block-container
-    .block-hl
-      p Nenrei
-    .block-main-left
-      - if @edit_mode.present? && @edit_mode == "nenrei"
-        .form-group
-          = text_field_tag(:year_nenrei, @current_year.nenrei, class: "nenrei-edit-year form-control")
-      - else
-        h2.nenrei-update-year
-          = "#{@current_year.nenrei} 歳"
-    .block-main-center
-      h2
-    .block-main-right
-      = render "edit_refresh_button", block_type: "nenrei"
+  .block
+    .block-header
+      | Nenrei
+    .block-subheader
+      | 年齢から探す
+    == form_tag(nengos_path, method: :post)
+    .form-group
+      = hidden_field_tag("submit-type", "nenrei")
+      = label_tag("現在の年齢")
+      = text_field_tag(:year_nenrei, @current_year.nenrei)
+      = submit_tag("SUBMIT")

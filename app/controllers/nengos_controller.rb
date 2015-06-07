@@ -22,14 +22,17 @@ class NengosController < ApplicationController
   end
 
   private
-    def reload_data(data)
+    def reload_data(submit_type)
       # seireki: year; nengo: year, jidai; nenrei: year, eto: X, koki: year
       current_year = Year.new
-      case data
+      case submit_type
       when "seireki"
         current_year.set_by_seireki(params[:year_seireki].to_i)
       when "nengo"
-        current_year.set_by_nengo({ year_rel: params[:year_rel_nengo].to_i, jidai: params[:jidai] })
+        current_year.set_by_nengo({
+          year_rel: params[:year_rel_nengo].to_i,
+          jidai: params[:jidai]
+        })
       when "nenrei"
         current_year.set_by_nenrei(params[:year_nenrei].to_i)
       when "koki"

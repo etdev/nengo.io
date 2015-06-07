@@ -117,7 +117,6 @@ $sp-mult: 1.39;
 // redesign
 .block {
   border-radius: 5px;
-  //padding: 20px 40px 30px 40px;
   padding: 2vh 4vh 3vh;
   @include bp(sp) {
     height: ($sp-mult * 28vh);

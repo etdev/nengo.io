@@ -4,35 +4,14 @@
       | Nengo
     .block-subheader
       | 和暦年号から探す
-    .form-group
-      .col-sm-6.col-md-3
-        = label_tag("年号の時代")
-        = text_field_tag(:jidai, @current_year.year_seireki)
-      .col-sm-6.col-md-3
-        = label_tag("年号の年")
-        = text_field_tag(:year_nengo, @current_year.data_nengo["year_rel"])
-      = submit_tag("SUBMIT")
-
-/.col-sm-12.col-md-6
-/.nengo-block-container
-  /= render 'edit_forms', edit_mode: @edit_mode
-  /.block-hl
-    /p Nengo
-  /.block-main-left
-    /- if @edit_mode.present? && @edit_mode == "nengo"
-      /.form-group
-        /select.nengo-edit-jidai name="jidai"
-          /- @current_year.jidai_data.reverse_each do |jidai|
-            /option = "#{jidai["name"]}"
-    /- else
-      /h2.nengo-update-jidai
-        /= @current_year.data_nengo["name"]
-  /.block-main-center
-    /- if @edit_mode.present? && @edit_mode == "nengo"
-      /.form-group
-        /= text_field_tag(:year_rel_nengo, @current_year.data_nengo["year_rel"], class: "nengo-edit-year form-control")
-    /- else
-      /h2.nengo-update-year
-        /= @current_year.data_nengo["year_rel"]
-  /.block-main-right
-    /= render "edit_refresh_button", block_type: "nengo"
+    = form_tag(nengos_path, method: :post)
+      .form-group
+        = hidden_field_tag("submit-type", "nengo")
+        .col-sm-6.col-md-6
+          = label_tag("年号の時代")
+          = text_field_tag(:jidai, @current_year.year_seireki)
+        .col-sm-6.col-md-6
+          = label_tag("年号の年")
+          = text_field_tag(:year_rel_nengo, @current_year.data_nengo["year_rel"])
+        .col-sm-12.col-md-12
+          = submit_tag("SUBMIT")
