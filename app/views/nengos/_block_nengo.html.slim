@@ -7,20 +7,12 @@
     = form_tag(nengos_path, method: :post)
       .form-group
         = hidden_field_tag("submit-type", "nengo")
-        .col-sm-6.col-md-6
-          = label_tag("年号の時代")
-          select.form-control name="jidai"
-            - @current_year.jidai_data.reverse_each.with_index do |jidai, i|
-              - if i <= 3 && @current_year.data_nengo["name"] == /#{jidai["name"]}/
-                option #{jidai["name"]} selected="selected"
-              - elsif @current_year.data_nengo["name"] == /#{jidai["name"]}/
-                option #{jidai["name"]} (#{jidai["reading"]}, #{jidai["begin_yr"]}-#{jidai["end_yr"]}) selected="selected"
-              - elsif i <= 3
-                option #{jidai["name"]}
-              - else
-                option #{jidai["name"]} (#{jidai["reading"]}, #{jidai["begin_yr"]}-#{jidai["end_yr"]})
-        .col-sm-6.col-md-6
-          = label_tag("年号の年")
-          = text_field_tag(:year_rel_nengo, @current_year.data_nengo["year_rel"])
-        .col-sm-12.col-md-12
-          = submit_tag("SUBMIT")
+        .row
+          .col-sm-6.col-md-6
+            = label_tag("年号の時代")
+            = select_tag "jidai", options_for_select(@current_year.jidai_data.reverse.map{ |jidai| [ "#{jidai["name"]} (#{jidai["reading"]})", jidai["name"]]}, @current_year.data_nengo["name"])
+          .col-sm-6.col-md-6
+            = label_tag("年号の年")
+            = text_field_tag(:year_rel_nengo, @current_year.data_nengo["year_rel"])
+          .col-sm-12.col-md-12
+            = submit_tag("SUBMIT")

@@ -7,11 +7,13 @@
     = form_tag(nengos_path, method: :post)
       .form-group
         = hidden_field_tag("submit-type", "eto")
-        .col-sm-6.col-md-6
-          = label_tag("干支の年")
-          = text_field_tag(:year_eto, @current_year.data_eto[:year_rel])
-        .col-sm-6.col-md-6
-          = label_tag("干支のデータ")
-          = text_field_tag(:data_eto, "#{@current_year.data_eto[:animal]["reading_kanji"]} (#{@current_year.data_eto[:element]["name"]})")
-        .col-sm-12.col-md-12
-          = submit_tag("SUBMIT")
+        .row
+          .col-sm-6.col-md-6
+            = label_tag("干支の年")
+            = text_field_tag(:year_eto, @current_year.data_eto[:year_rel])
+          .col-sm-6.col-md-6
+            = label_tag("干支のデータ")
+            = text_field_tag(:data_eto, "#{@current_year.data_eto[:animal]["reading_kanji"]} (#{@current_year.data_eto[:element]["name"]})")
+        .row
+          .col-sm-12.col-md-12
+            = submit_tag("SUBMIT")

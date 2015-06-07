@@ -1,5 +1,5 @@
 // navbar
-$navbarHeight: 7vmax;
+$navbarHeight: 7vh;
 
 nav.navbar.navbar-default {
   background: $lightBlue;
@@ -87,7 +87,7 @@ a.navbar-brand.brand-logo {
   }
 
   .navbar-header .navbar-toggle {
-    line-height: 8.4vmax;
+    line-height: 8.4vh;
   }
 
   .navbar-collapse ul.nav.navbar-nav li {
