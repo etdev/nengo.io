@@ -6,9 +6,9 @@ $sp-mult: 1.39;
 
 .nengo-top-container {
   @include bp(sp) {
-    height: ($sp-mult * 20vh);
+    height: ($sp-mult * 16vmax);
   }
-  height: 20vh;
+  height: 16vmax;
 }
 
 .block-container {
@@ -117,11 +117,11 @@ $sp-mult: 1.39;
 // redesign
 .block {
   border-radius: 5px;
-  padding: 2vh 4vh 3vh;
+  padding: 2vmax 4vmax 3vmax;
   @include bp(sp) {
-    height: ($sp-mult * 28vh);
+    height: ($sp-mult * 28vmax);
   }
-  height: 28vh;
+  height: 28vmax;
   background-color: $white;
   border: 1px solid $lighterGray;
   margin-bottom: 2vh;
@@ -130,7 +130,7 @@ $sp-mult: 1.39;
 .block-double {
   @extend .block;
   @include bp(sp) {
-    height: ($sp-mult * 36vh);
+    height: ($sp-mult * 36vmax);
   }
 }
 
@@ -138,9 +138,9 @@ $sp-mult: 1.39;
   color: $orange;
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   @include bp(sp) {
-    font-size: ($sp-mult * 2.2vh);
+    font-size: ($sp-mult * 2.2vmax);
   }
-  font-size: 2.2vh;
+  font-size: 2.2vmax;
   text-align: center;
   box-sizing: border-box;
   padding: 2vh 0 .0.5vh 0;

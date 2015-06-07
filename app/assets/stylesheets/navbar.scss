@@ -1,5 +1,5 @@
 // navbar
-$navbarHeight: 6.5vh;
+$navbarHeight: 7vmax;
 
 nav.navbar.navbar-default {
   background: $lightBlue;
@@ -61,8 +61,12 @@ a.navbar-brand.brand-logo {
   }
 }
 
-.navbar-collapse.collapse.in ul.nav li a {
+.navbar-collapse ul.nav li:last-child {
+  @include bp(sp) {
+    border-bottom: none !important;
+  }
 }
+
 
 .nav-divider {
   width: 100%;
@@ -79,20 +83,26 @@ a.navbar-brand.brand-logo {
 
 @media (max-width: 768px) {
   a.navbar-brand.brand-logo, .app-icon, {
-    height: 8.4vh;
-    line-height: 8.4vh;
+    height: 8.4vmax;
+    line-height: 8.4vmax;
   }
 
   .navbar-header .navbar-toggle {
-    line-height: 8.4vh;
+    line-height: 8.4vmax;
   }
 
-  .navbar-collapse ul.nav.navbar-nav li a {
+  .navbar-collapse ul.nav.navbar-nav li {
     border-bottom: 1px solid #ECECEC;
+    &:last-child {
+      border-bottom: none;
+    }
   }
 
   /* switch to white navbar */
   nav.navbar.navbar-default {
+    li:last-child {
+      border: none !important;
+    }
     background: $white;
     margin-bottom: 0px;
     border: 1px solid #EEE;
