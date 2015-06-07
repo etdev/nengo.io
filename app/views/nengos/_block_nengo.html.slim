@@ -10,7 +10,10 @@
         .row
           .col-sm-6.col-md-6
             = label_tag("年号の時代")
-            = select_tag "jidai", options_for_select(@current_year.jidai_data.reverse.map{ |jidai| [ "#{jidai["name"]} (#{jidai["reading"]})", jidai["name"]]}, @current_year.data_nengo["name"])
+            select name="jidai"
+              - @current_year.jidai_data.reverse_each do |jidai|
+                option value=jidai["name"] selected=(jidai["name"] == @current_year.data_nengo["name"] ? "selected" : nil)
+                  = "#{jidai['name']} (#{jidai['reading']})"
           .col-sm-6.col-md-6
             = label_tag("年号の年")
             = text_field_tag(:year_rel_nengo, @current_year.data_nengo["year_rel"])

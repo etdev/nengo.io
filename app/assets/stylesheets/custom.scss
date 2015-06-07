@@ -45,6 +45,7 @@ body {
   }
   select, input[type="text"] {
     width: 100%;
+    //-webkit-appearance: none;
     height: 39px;
     background: #FFF !important;
     color: $darkerBlue;
@@ -67,6 +68,9 @@ body {
     background: $orangeLighter;
     border-radius: 5px;
     color: $white;
+    &:hover {
+      background-color: $orangeDarker;
+    }
   }
 }
 
@@ -74,4 +78,3 @@ body {
   padding: 0 !important;
   margin: 0 !important;
 }
-

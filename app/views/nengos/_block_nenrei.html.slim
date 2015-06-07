@@ -5,8 +5,8 @@
     .block-subheader
       | 年齢から探す
     == form_tag(nengos_path, method: :post)
-    .form-group
-      = hidden_field_tag("submit-type", "nenrei")
-      = label_tag("現在の年齢")
-      = text_field_tag(:year_nenrei, @current_year.nenrei)
-      = submit_tag("SUBMIT")
+      .form-group
+        = hidden_field_tag("submit-type", "nenrei")
+        = label_tag("現在の年齢")
+        = text_field_tag(:year_nenrei, @current_year.nenrei)
+        = submit_tag("SUBMIT")

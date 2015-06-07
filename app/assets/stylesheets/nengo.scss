@@ -138,7 +138,7 @@ $sp-mult: 1.39;
   color: $orange;
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   @include bp(sp) {
-    font-size: ($sp-mult * 2.2vh);
+    font-size: ($sp-mult * 2.5vh);
   }
   font-size: 2.2vh;
   text-align: center;
@@ -147,7 +147,12 @@ $sp-mult: 1.39;
 }
 
 .block-subheader {
+  padding-top: 0.6vh;
+  padding-bottom: 1vh;
   color: $darkGray;
+  @include bp(sp) {
+    font-size: ($sp-mult * 2.5vh);
+  }
   font-size: 2.2vh;
   text-align: center;
 }

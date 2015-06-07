@@ -1,5 +1,11 @@
-.holidays-container-main
-  br
-  - @years.each do |current_year|
-    = render 'holiday_table', current_year: current_year
+.top-pic
+  .holidays-container-main
+    .page-header
+      | 祝日の一覧ページ
+    .page-subheader
+      | 今年の祝日の日付をチェックできます！
+      a href=about_path   もっと詳しく
+
+    - @years.each do |current_year|
+      = render 'holiday_table', current_year: current_year
 
