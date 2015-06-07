@@ -7,6 +7,9 @@ class NengosController < ApplicationController
   def update
     current_year = reload_data(submit_type)
     redirect_to action: :index, year_seireki: current_year.year_seireki
+  rescue
+    flash[:notice] = "入力したデータが不正の為変換に失敗しました"
+    redirect_to action: :index
   end
 
   def edit
@@ -14,10 +17,13 @@ class NengosController < ApplicationController
     @current_year = Year.new
     @current_year.set_by_seireki(params[:year_seireki].to_i)
     render :index
+  rescue
+    flash[:notice] = "入力したデータが不正の為変換に失敗しました"
+    render :index
   end
 
   def about
-
+    render
   end
 
   private
