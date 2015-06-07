@@ -16,4 +16,4 @@
             = text_field_tag(:data_eto, "#{@current_year.data_eto[:animal]["reading_kanji"]} (#{@current_year.data_eto[:element]["name"]})")
         .row
           .col-sm-12.col-md-12
-            = submit_tag("SUBMIT")
+            = submit_tag("SUBMIT", class: "disabled", disabled: "disabled")

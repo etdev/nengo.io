@@ -2,7 +2,7 @@ $block-height: 160px;
 $block-height-main: 4*$block-height/5;
 $block-height-hl: $block-height/5;
 $edit-button-height: 60px;
-$sp-mult: 1.39;
+$sp-mult: 1.49;
 
 .nengo-top-container {
   @include bp(sp) {
