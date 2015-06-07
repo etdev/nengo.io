@@ -1,5 +1,5 @@
 // navbar
-$navbarHeight: 70px;
+$navbarHeight: 7.5vh;
 
 nav.navbar.navbar-default {
   background: $lightBlue;
@@ -21,7 +21,7 @@ a.brand-logo {
 
 a.navbar-brand.brand-logo {
   color: $orange;
-  margin-top: ($navbarHeight - 50)/2;
+  line-height: $navbarHeight;
 }
 
 .app-icon {
@@ -36,10 +36,10 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-header .navbar-toggle {
-  border: none !important;
-  margin-top: ($navbarHeight - 50)/2 + 8;
+  border: 1px solid $orange;
+  line-height: $navbarHeight;
   &:hover {
-    background: $white !important;
+    //background: $white !important;
   }
 }
 
@@ -54,8 +54,6 @@ a.navbar-brand.brand-logo {
   font-weight: 600;
   text-align: center;
   color: $orange;
-  padding: 0 15px;
-
   &:hover {
     //background: $white;
     color: $pewter;
@@ -63,7 +61,6 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-collapse.collapse.in ul.nav li a {
-
 }
 
 .nav-divider {
@@ -76,5 +73,19 @@ a.navbar-brand.brand-logo {
   .app-icon {
     margin-right: 10px;
     border: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  a.navbar-brand.brand-logo, .app-icon, {
+    height: 10.4vh;
+    line-height: 10.4vh;
+  }
+  .navbar-header .navbar-toggle {
+    margin-top: 5vh;
+    line-height: 10.4vh;
+  }
+  .navbar-collapse ul.nav.navbar-nav li a {
+    border-bottom: 1px solid #ECECEC;
   }
 }
