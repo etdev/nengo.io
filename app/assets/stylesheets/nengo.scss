@@ -2,8 +2,12 @@ $block-height: 160px;
 $block-height-main: 4*$block-height/5;
 $block-height-hl: $block-height/5;
 $edit-button-height: 60px;
+$sp-mult: 1.39;
 
 .nengo-top-container {
+  @include bp(sp) {
+    height: ($sp-mult * 15vh);
+  }
   height: 15vh;
 }
 
@@ -114,26 +118,33 @@ $edit-button-height: 60px;
 .block {
   border-radius: 5px;
   //padding: 20px 40px 30px 40px;
-  padding: 2vh 4vh 3vh 4vh;
-
-  height: 35vh;
+  padding: 2vh 4vh 3vh;
+  @include bp(sp) {
+    height: ($sp-mult * 28vh);
+  }
+  height: 28vh;
   background-color: $white;
   border: 1px solid $lighterGray;
-  margin-bottom: 20px;
+  margin-bottom: 2vh;
 }
 
 .block-double {
   @extend .block;
-  height: 45vh;
+  @include bp(sp) {
+    height: ($sp-mult * 36vh);
+  }
 }
 
 .block-header {
   color: $orange;
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+  @include bp(sp) {
+    font-size: ($sp-mult * 2.2vh);
+  }
   font-size: 2.2vh;
   text-align: center;
   box-sizing: border-box;
-  padding: 20px 0 5px 0;
+  padding: 2vh 0 .0.5vh 0;
 }
 
 .block-subheader {

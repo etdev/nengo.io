@@ -1,14 +1,14 @@
 .col-sm-12.col-md-6
-  .block
+  .block-double
     .block-header
       | Nengo
     .block-subheader
       | 和暦年号から探す
     .form-group
-      .col-sm-12.col-md-6
+      .col-sm-6.col-md-3
         = label_tag("年号の時代")
         = text_field_tag(:jidai, @current_year.year_seireki)
-      .col-sm-12.col-md-6
+      .col-sm-6.col-md-3
         = label_tag("年号の年")
         = text_field_tag(:year_nengo, @current_year.data_nengo["year_rel"])
       = submit_tag("SUBMIT")
