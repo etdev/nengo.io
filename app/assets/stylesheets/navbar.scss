@@ -45,7 +45,10 @@ a.navbar-brand.brand-logo {
 }
 
 .navbar-collapse ul.nav.navbar-nav li a {
-  font-size: 1.4em;
+  font-size: 2.2vh;
+  @include bp(sp) {
+    font-size: 1.4em;
+  }
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
   line-height: $navbarHeight;
   font-weight: 600;

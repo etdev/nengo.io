@@ -118,10 +118,7 @@ $sp-mult: 1.49;
 .block {
   border-radius: 5px;
   padding: 2vh 4vh 3vh;
-  @include bp(sp) {
-    height: ($sp-mult * 28vh);
-  }
-  height: 28vh;
+  height: 280px;
   background-color: $white;
   border: 1px solid $lighterGray;
   margin-bottom: 2vh;
@@ -130,7 +127,7 @@ $sp-mult: 1.49;
 .block-double {
   @extend .block;
   @include bp(sp) {
-    height: ($sp-mult * 36vh);
+    height: 340px;
   }
 }
 
