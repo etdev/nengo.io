@@ -2,6 +2,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
+  host: localhost
 development:
   <<: *default
   database: nengoWeb_development
@@ -11,5 +12,5 @@ test:
 production:
   <<: *default
   database: nengoWeb_production
-  username: nengoWeb
+  username: nengoio
   password: <%= ENV['NENGOWEB_DATABASE_PASSWORD'] %>

@@ -7,6 +7,7 @@
 # Ignore bundler config.
 /.bundle
 /vendor
+.rbenv-vars
 
 # Ignore all logfiles and tempfiles.
 /log/*
