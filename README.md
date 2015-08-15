@@ -1,3 +1,4 @@
+[![Code Climate](https://codeclimate.com/github/etdev/nengo.io/badges/gpa.svg)](https://codeclimate.com/github/etdev/nengo.io)
 [nengo.io](http://nengo.io)
 =======
 
