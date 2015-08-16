@@ -1,8 +1,9 @@
-[![Code Climate](https://codeclimate.com/github/etdev/nengo.io/badges/gpa.svg)](https://codeclimate.com/github/etdev/nengo.io)
-[nengo.io](http://nengo.io)
+nengo.io
 =======
 
-[nengo](https://github.com/gazayas/nengo)のウェブ版
+[![Code Climate](https://codeclimate.com/github/etdev/nengo.io/badges/gpa.svg)](https://codeclimate.com/github/etdev/nengo.io) [![Build Status](https://travis-ci.org/etdev/zoneconvert.svg?branch=master)](https://travis-ci.org/etdev/zoneconvert)
+
+[nengo](https://github.com/gazayas/nengo)のウェブ版 (http://nengo.io)
 
 ### 何のテクノロジーでできているか
 * Rails 4.2, Ruby 2.2

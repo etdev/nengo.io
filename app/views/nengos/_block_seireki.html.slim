@@ -7,6 +7,6 @@
     = form_tag(nengos_path, method: :post)
       .form-group
         = hidden_field_tag("submit-type", "seireki")
-        = label_tag("西暦の年")
+        = label_tag("year_seireki", "西暦の年")
         = text_field_tag(:year_seireki, @current_year.year_seireki)
-        = submit_tag("SUBMIT")
+        = submit_tag("SUBMIT", id: "submit_seireki")
