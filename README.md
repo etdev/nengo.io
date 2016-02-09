@@ -1,7 +1,7 @@
 nengo.io
 =======
 
-[![Code Climate](https://codeclimate.com/github/etdev/nengo.io/badges/gpa.svg)](https://codeclimate.com/github/etdev/nengo.io) [![Build Status](https://circleci.com/gh/etdev/nengo.io.png?style=shield)](https://circleci.com/etdev/nengo.io)
+[![Code Climate](https://codeclimate.com/github/etdev/nengo.io/badges/gpa.svg)](https://codeclimate.com/github/etdev/nengo.io) [![Build Status](https://circleci.com/gh/etdev/nengo.io.png?style=shield)](https://circleci.com/gh/etdev/nengo.io)
 
 [nengo](https://github.com/gazayas/nengo)のウェブ版 (http://nengo.io)
 
